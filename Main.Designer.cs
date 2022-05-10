@@ -1,7 +1,7 @@
 ﻿
 namespace seminar9
 {
-    partial class AddPlaneForm
+    partial class Main
     {
         /// <summary>
         /// Required designer variable.
@@ -41,6 +41,7 @@ namespace seminar9
             this.button1.TabIndex = 9;
             this.button1.Text = "User";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // planeSaveButton
             // 
@@ -50,6 +51,7 @@ namespace seminar9
             this.planeSaveButton.TabIndex = 8;
             this.planeSaveButton.Text = "Admin";
             this.planeSaveButton.UseVisualStyleBackColor = true;
+            this.planeSaveButton.Click += new System.EventHandler(this.planeSaveButton_Click_1);
             // 
             // AddPlaneForm
             // 

@@ -46,9 +46,6 @@ namespace seminar9.Database
             },
 
             //haine
-           
-
-
             //copii
             new Equipment()
             {
@@ -82,9 +79,6 @@ namespace seminar9.Database
             },
 
             //accesorii
-           
-
-
             //copii
             new Equipment()
             {

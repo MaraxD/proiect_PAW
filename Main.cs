@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace seminar9
 {
-    public partial class AddPlaneForm : Form
+    public partial class Main : Form
     {
-        public AddPlaneForm()
+        public Main()
         {
             InitializeComponent();
         }
@@ -26,6 +26,20 @@ namespace seminar9
             plane.Seats = Convert.ToInt32(seatsTextBox.Text);*/
 
             
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var user = new UserPage();
+            user.Show();
+            Hide();
+        }
+
+        private void planeSaveButton_Click_1(object sender, EventArgs e)
+        {
+            var user = new AdminPage();
+            user.Show();
+            Hide();
         }
     }
 }

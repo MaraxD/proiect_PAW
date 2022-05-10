@@ -11,20 +11,40 @@ namespace seminar9.Repositories
     public class EquipRepository : IEquipRepository
     {
 
-        public void Add(Equipment equipment)
+        public void Add1(Equipment equipment)
         {
-
             BarbatiDatabase.Equipments.Add(equipment);
-            /*CopiiDatabase.Equipments.Add(equipment);
-            FemeiDatabase.Equipments.Add(equipment);*/
         }
 
-        public List<Equipment> GetALL()
+        public List<Equipment> GetBARBATI()
         {
             return BarbatiDatabase.Equipments;
-            /*return CopiiDatabase.Equipments;
-            return FemeiDatabase.Equipments;*/
         }
+
+
+
+        public void Add2(Equipment equipment)
+        {
+            FemeiDatabase.Equipments.Add(equipment);
+        }
+
+        public List<Equipment> GetFEMEI()
+        {
+            return FemeiDatabase.Equipments;
+        }
+
+
+
+        public void Add3(Equipment equipment)
+        {
+            CopiiDatabase.Equipments.Add(equipment);
+        }
+
+        public List<Equipment> GetCOPII()
+        {
+            return CopiiDatabase.Equipments;
+        }
+
 
     }
 }

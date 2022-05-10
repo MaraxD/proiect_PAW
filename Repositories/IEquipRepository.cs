@@ -9,7 +9,13 @@ namespace seminar9.Repositories
 {
     public interface IEquipRepository
     {
-        List<Equipment> GetALL();
-        void Add(Equipment plane); //nu returnam nimic pentru ca doar citim datele
+        List<Equipment> GetBARBATI();
+        void Add1(Equipment equipment); //nu returnam nimic pentru ca doar citim datele
+
+        List<Equipment> GetFEMEI();
+        void Add2(Equipment equipment); //nu returnam nimic pentru ca doar citim datele
+
+        List<Equipment> GetCOPII();
+        void Add3(Equipment equipment); //nu returnam nimic pentru ca doar citim datele
     }
 }

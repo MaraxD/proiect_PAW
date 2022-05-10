@@ -11,25 +11,35 @@ using System.Windows.Forms;
 
 namespace seminar9
 {
-    public partial class Form1 : Form
+    public partial class UserPage : Form
     {
         private IEquipRepository _equipRepository; //nu am get si nici set; nu am instantiat o 
 
-        public Form1()
+        public UserPage()
         {
             InitializeComponent();
             //instantierea variab private
             _equipRepository = new EquipRepository();
-            planesDataGrid.DataSource = _equipRepository.GetALL();
+            equipDataGrid1.DataSource = _equipRepository.GetBARBATI();
+            equipDataGrid2.DataSource = _equipRepository.GetFEMEI();
+            equipDataGrid3.DataSource = _equipRepository.GetCOPII();
         }
 
         private void addPlaneButton_Click(object sender, EventArgs e)
         {
-            var addPlaneForm = new AddPlaneForm();
+            var addPlaneForm = new Main();
             addPlaneForm.Show();
 
             
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            var exit = new Main();
+            exit.Show();
+            Hide();
+        }
+
 
         //abuzarea extension methods impiedica testarea codului
     }
