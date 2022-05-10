@@ -20,10 +20,10 @@ namespace seminar9
 
         private void planeSaveButton_Click(object sender, EventArgs e)
         {
-            var plane = new Plane();
-            plane.Name = nameTextBox.Text;
+            var plane = new Equipment();
+            /*plane.Name = nameTextBox.Text;
             plane.Type = typeTextBox.Text;
-            plane.Seats = Convert.ToInt32(seatsTextBox.Text);
+            plane.Seats = Convert.ToInt32(seatsTextBox.Text);*/
 
             
         }

@@ -13,14 +13,14 @@ namespace seminar9
 {
     public partial class Form1 : Form
     {
-        private IPlaneRepository _planeRepository; //nu am get si nici set; nu am instantiat o 
+        private IEquipRepository _equipRepository; //nu am get si nici set; nu am instantiat o 
 
         public Form1()
         {
             InitializeComponent();
             //instantierea variab private
-            _planeRepository = new PlaneRepository();
-            planesDataGrid.DataSource = _planeRepository.GetALL();
+            _equipRepository = new EquipRepository();
+            planesDataGrid.DataSource = _equipRepository.GetALL();
         }
 
         private void addPlaneButton_Click(object sender, EventArgs e)

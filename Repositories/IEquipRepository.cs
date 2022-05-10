@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace seminar9.Repositories
 {
-    public interface IPlaneRepository
+    public interface IEquipRepository
     {
-        List<Plane> GetALL();
-        void Add(Plane plane); //nu returnam nimic pentru ca doar citim datele
+        List<Equipment> GetALL();
+        void Add(Equipment plane); //nu returnam nimic pentru ca doar citim datele
     }
 }
