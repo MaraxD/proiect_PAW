@@ -63,6 +63,16 @@ namespace seminar9.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap png_Home_Button_Icon_Png_Home_Bread_Crumbs_home_button_image {
+            get {
+                object obj = ResourceManager.GetObject("png-Home-Button-Icon-Png-Home-Bread-Crumbs-home-button-image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap png_transparent_computer_icons_logout_angle_text_black {
             get {
                 object obj = ResourceManager.GetObject("png-transparent-computer-icons-logout-angle-text-black", resourceCulture);
