@@ -19,6 +19,21 @@ namespace seminar9
             InitializeComponent();
             _equipRepository = new EquipRepository();
             equipDataGrid1.DataSource = _equipRepository.GetBARBATI();
+
+            equipDataGrid1.AutoGenerateColumns = false; //ce face
+
+            equipDataGrid1.ColumnCount = 3;
+
+            //butoane
+            var addToCart = new DataGridViewButtonColumn();
+            addToCart.Text = "Add to cart";
+            addToCart.UseColumnTextForButtonValue = true; //ce face lol
+            //addToCart.CellClick+=
+
+
+
+
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

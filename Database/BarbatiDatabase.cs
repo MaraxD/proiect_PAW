@@ -105,15 +105,15 @@ namespace seminar9.Database
             },
              new Equipment()
             {
-                Description="Pantofi tenis NikeCourt Air Max Volley",
-                Price=127.99,
+                Description="Geanta fitness Teambag",
+                Price=59.99,
                 Color="BLACK"
             },
             new Equipment()
             {
-                Description="Pantofi copii Grand Court",
-                Price=174.99,
-                Color="WWHITE-BLUE"
+                Description="Manusi",
+                Price=20.99,
+                Color="BLACK"
             }
 
 

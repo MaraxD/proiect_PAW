@@ -53,12 +53,12 @@ namespace seminar9
             this.equipDataGrid1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.equipDataGrid1.BackgroundColor = System.Drawing.SystemColors.Control;
             this.equipDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.equipDataGrid1.Location = new System.Drawing.Point(12, 91);
+            this.equipDataGrid1.Location = new System.Drawing.Point(12, 62);
             this.equipDataGrid1.Name = "equipDataGrid1";
             this.equipDataGrid1.ReadOnly = true;
             this.equipDataGrid1.RowHeadersWidth = 62;
             this.equipDataGrid1.RowTemplate.Height = 28;
-            this.equipDataGrid1.Size = new System.Drawing.Size(776, 347);
+            this.equipDataGrid1.Size = new System.Drawing.Size(776, 93);
             this.equipDataGrid1.TabIndex = 6;
             // 
             // BarbatiPage
