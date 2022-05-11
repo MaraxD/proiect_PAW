@@ -46,29 +46,39 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Database\FakeDatabase.cs" />
-    <Compile Include="Entities\Plane.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="AdminPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="AdminPage.Designer.cs">
+      <DependentUpon>AdminPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddPlaneForm.cs">
+    <Compile Include="Database\BarbatiDatabase.cs" />
+    <Compile Include="Database\CopiiDatabase.cs" />
+    <Compile Include="Database\FemeiDatabase.cs" />
+    <Compile Include="Entities\Equipment.cs" />
+    <Compile Include="Entities\Sales.cs" />
+    <Compile Include="Entities\Store.cs" />
+    <Compile Include="UserPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddPlaneForm.Designer.cs">
-      <DependentUpon>AddPlaneForm.cs</DependentUpon>
+    <Compile Include="UserPage.Designer.cs">
+      <DependentUpon>UserPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\IPlaneRepository.cs" />
-    <Compile Include="Repositories\PlaneRepository.cs" />
-    <EmbeddedResource Include="AddPlaneForm.resx">
-      <DependentUpon>AddPlaneForm.cs</DependentUpon>
+    <Compile Include="Repositories\EquipRepository.cs" />
+    <Compile Include="Repositories\IEquipRepository.cs" />
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="UserPage.resx">
+      <DependentUpon>UserPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -78,6 +88,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -91,6 +102,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-computer-icons-logout-angle-text-black.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
