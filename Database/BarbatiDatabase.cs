@@ -12,7 +12,6 @@ namespace seminar9.Database
         public static List<Equipment> Equipments = new List<Equipment>()
         {
             //pantofi
-            //barbati
             new Equipment()
             {
 
@@ -52,7 +51,6 @@ namespace seminar9.Database
             
 
             //haine
-            //barbati
             new Equipment()
             {
                 Description="Jacheta barbati Sportswear Swoosh",
@@ -87,36 +85,35 @@ namespace seminar9.Database
 
 
             //accesorii
-            //barbati
             new Equipment()
             {
-                Description="Pantofi dama adidas Streetcheck",
-                Price=111.99,
-                Color="WHITE"
+                Description="Borseta Nike Heritage",
+                Price=99.99,
+                Color="BLACK-WHITE"
             },
             new Equipment()
             {
-                Description="Pantofi dama Nike Air Zoom SuperRep 3",
-                Price=167.99,
-                Color="GREY"
+                Description="Racheta Us Open 25",
+                Price=69.99,
+                Color="WHITE-RED"
             },
             new Equipment()
             {
-                Description="Pantofi baschet Trae Young 1-Adidas",
-                Price=139.99,
-                Color="BLUE-RED"
+                Description="Suport Pentru Genunchi,",
+                Price=27.99,
+                Color="BLACK"
             },
              new Equipment()
             {
-                Description="Pantofi tenis NikeCourt Air Max Volley",
-                Price=127.99,
+                Description="Geanta fitness Teambag",
+                Price=59.99,
                 Color="BLACK"
             },
             new Equipment()
             {
-                Description="Pantofi copii Grand Court",
-                Price=174.99,
-                Color="WWHITE-BLUE"
+                Description="Manusi",
+                Price=20.99,
+                Color="BLACK"
             }
 
 

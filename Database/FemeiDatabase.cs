@@ -15,7 +15,6 @@ namespace seminar9.Database
             //femei
             new Equipment()
             {
-
                 Description="Pantofi dama adidas Streetcheck",
                 Price=299.99,
                 Color="WHITE"
@@ -67,48 +66,48 @@ namespace seminar9.Database
             },
              new Equipment()
             {
-                Description="Pantofi tenis NikeCourt Air Max Volley",
-                Price=127.99,
-                Color="BLACK"
+                Description="Jacheta dama Itavic 3-Stripes Midweight",
+                Price=599.99,
+                Color="WHITE"
             },
             new Equipment()
             {
-                Description="Pantofi copii Grand Court",
+                Description="Bustiera Dama Nike Swoosh UltraBreathe",
                 Price=174.99,
-                Color="WWHITE-BLUE"
+                Color="BEIGE"
             },
 
             //accesorii
             //femei
             new Equipment()
             {
-                Description="Pantofi dama adidas Streetcheck",
-                Price=111.99,
-                Color="WHITE"
-            },
-            new Equipment()
-            {
-                Description="Pantofi dama Nike Air Zoom SuperRep 3",
-                Price=167.99,
+                Description="Disc greutate cu 3 manere de 15Kg",
+                Price=159.99,
                 Color="GREY"
             },
             new Equipment()
             {
-                Description="Pantofi baschet Trae Young 1-Adidas",
-                Price=139.99,
-                Color="BLUE-RED"
-            },
-             new Equipment()
-            {
-                Description="Pantofi tenis NikeCourt Air Max Volley",
-                Price=127.99,
-                Color="BLACK"
+                Description="Curled Bar 120cm-28mm",
+                Price=119.99,
+                Color="SILVER"
             },
             new Equipment()
             {
-                Description="Pantofi copii Grand Court",
-                Price=174.99,
-                Color="WWHITE-BLUE"
+                Description="Rucsac Vancouver ",
+                Price=29.99,
+                Color="GREY"
+            },
+             new Equipment()
+            {
+                Description="Ochelari inot Goggles Fastskin Speedsocket",
+                Price=229.99,
+                Color="WHITE-BLACK"
+            },
+            new Equipment()
+            {
+                Description="Manusi Box",
+                Price=59.99,
+                Color="RED-YELL"
             }
 
 

@@ -52,12 +52,30 @@
     <Compile Include="AdminPage.Designer.cs">
       <DependentUpon>AdminPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="BarbatiPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BarbatiPage.Designer.cs">
+      <DependentUpon>BarbatiPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CopiiPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CopiiPage.Designer.cs">
+      <DependentUpon>CopiiPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Database\BarbatiDatabase.cs" />
     <Compile Include="Database\CopiiDatabase.cs" />
     <Compile Include="Database\FemeiDatabase.cs" />
     <Compile Include="Entities\Equipment.cs" />
     <Compile Include="Entities\Sales.cs" />
     <Compile Include="Entities\Store.cs" />
+    <Compile Include="FemeiPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FemeiPage.Designer.cs">
+      <DependentUpon>FemeiPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +92,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\EquipRepository.cs" />
     <Compile Include="Repositories\IEquipRepository.cs" />
+    <EmbeddedResource Include="BarbatiPage.resx">
+      <DependentUpon>BarbatiPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CopiiPage.resx">
+      <DependentUpon>CopiiPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FemeiPage.resx">
+      <DependentUpon>FemeiPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
@@ -105,6 +132,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\png-transparent-computer-icons-logout-angle-text-black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-Home-Button-Icon-Png-Home-Bread-Crumbs-home-button-image.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
