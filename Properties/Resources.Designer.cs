@@ -79,5 +79,15 @@ namespace seminar9.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shopping_cart_png_image_shopping_cart_icon_sv_11562865326ta92uix1ak {
+            get {
+                object obj = ResourceManager.GetObject("shopping-cart-png-image-shopping-cart-icon-sv-11562865326ta92uix1ak", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

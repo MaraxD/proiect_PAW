@@ -52,6 +52,12 @@ namespace seminar9
             Hide();
         }
 
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            var checkOut = new CheckOut();
+            checkOut.Show();
+        }
+
 
         //abuzarea extension methods impiedica testarea codului
     }

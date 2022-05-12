@@ -1,4 +1,6 @@
-﻿using System;
+﻿using seminar9.Database;
+using seminar9.Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,17 @@ namespace seminar9
         public AdminPage()
         {
             InitializeComponent();
+            salesDataView.DataSource = SalesDatabase.boughtE; //initial, baza mea de date e goala
+            
+        }
+
+       
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            var exit = new Main();
+            exit.Show();
+            Hide();
         }
     }
 }

@@ -2,12 +2,14 @@
 using seminar9.Entities;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace seminar9.Repositories
 {
+
     public class EquipRepository : IEquipRepository
     {
 
@@ -16,7 +18,7 @@ namespace seminar9.Repositories
             BarbatiDatabase.Equipments.Add(equipment);
         }
 
-        public List<Equipment> GetBARBATI()
+        public BindingList<Equipment> GetBARBATI()
         {
             return BarbatiDatabase.Equipments;
         }
@@ -28,7 +30,7 @@ namespace seminar9.Repositories
             FemeiDatabase.Equipments.Add(equipment);
         }
 
-        public List<Equipment> GetFEMEI()
+        public BindingList<Equipment> GetFEMEI()
         {
             return FemeiDatabase.Equipments;
         }
@@ -40,7 +42,7 @@ namespace seminar9.Repositories
             CopiiDatabase.Equipments.Add(equipment);
         }
 
-        public List<Equipment> GetCOPII()
+        public BindingList<Equipment> GetCOPII()
         {
             return CopiiDatabase.Equipments;
         }

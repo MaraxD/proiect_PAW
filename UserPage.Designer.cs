@@ -36,8 +36,10 @@ namespace seminar9
             this.wStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,12 +78,23 @@ namespace seminar9
             this.cStripMenuItem.Text = "Copii";
             this.cStripMenuItem.Click += new System.EventHandler(this.cStripMenuItem_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::seminar9.Properties.Resources.shopping_cart_png_image_shopping_cart_icon_sv_11562865326ta92uix1ak;
+            this.pictureBox2.Location = new System.Drawing.Point(1336, 32);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(53, 51);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::seminar9.Properties.Resources.png_transparent_computer_icons_logout_angle_text_black;
-            this.pictureBox1.Location = new System.Drawing.Point(1372, 36);
+            this.pictureBox1.Location = new System.Drawing.Point(1407, 36);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.Size = new System.Drawing.Size(53, 47);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
@@ -92,6 +105,7 @@ namespace seminar9
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1472, 617);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.pictureBox1);
             this.MainMenuStrip = this.menuStrip1;
@@ -99,6 +113,7 @@ namespace seminar9
             this.Text = "Form1";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -112,6 +127,7 @@ namespace seminar9
         private ToolStripMenuItem wStripMenuItem;
         private ToolStripMenuItem mStripMenuItem;
         private ToolStripMenuItem cStripMenuItem;
+        private PictureBox pictureBox2;
     }
 }
 
