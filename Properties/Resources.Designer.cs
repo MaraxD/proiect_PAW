@@ -83,6 +83,36 @@ namespace seminar9.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2022_05_13_132909 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2022-05-13 132909", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2022_05_13_1329091 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2022-05-13 1329091", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2022_05_13_133543 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2022-05-13 133543", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap shopping_cart_png_image_shopping_cart_icon_sv_11562865326ta92uix1ak {
             get {
                 object obj = ResourceManager.GetObject("shopping-cart-png-image-shopping-cart-icon-sv-11562865326ta92uix1ak", resourceCulture);

@@ -152,5 +152,14 @@
   <ItemGroup>
     <None Include="Resources\shopping-cart-png-image-shopping-cart-icon-sv-11562865326ta92uix1ak.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2022-05-13 132909.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2022-05-13 1329091.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2022-05-13 133543.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

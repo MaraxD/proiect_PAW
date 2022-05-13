@@ -27,6 +27,10 @@ namespace seminar9
 
             equipDataGrid1.ColumnCount = 3;
 
+            AddColumn(0, "description", "Descriere");
+            AddColumn(1, "price", "Pret");
+            AddColumn(2, "color", "Culoare");
+
             //butoane
             var addToCart = new DataGridViewButtonColumn();
             addToCart.HeaderText = " ";
@@ -39,6 +43,12 @@ namespace seminar9
             equipDataGrid1.CellClick += cellClick;
             equipDataGrid1.DataSource = _equipRepository.GetBARBATI();
 
+        }
+
+        private void AddColumn(int index, string property, string header)
+        {
+            equipDataGrid1.Columns[index].HeaderText = header;
+            equipDataGrid1.Columns[index].DataPropertyName = property;
         }
 
         public static List<Equipment> equipmentsM = new List<Equipment>();

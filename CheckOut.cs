@@ -18,11 +18,13 @@ namespace seminar9
         {
             InitializeComponent();
             //afisez chestiile cumparate in dataGridul de pe pagina asta
-            dataGridView1.DataSource = BarbatiPage.equipmentsM; 
-            dataGridView1.DataSource = FemeiPage.equipmentsW; 
-            dataGridView1.DataSource = CopiiPage.equipmentsC; 
+            dataGridView1.DataSource = BarbatiPage.equipmentsM;
+
+            //intreaba l pe prof daca e posibil asa ceva
+            /*dataGridView1.DataSource = FemeiPage.equipmentsW;
+            dataGridView1.DataSource = CopiiPage.equipmentsC;*/
         }
-        
+
 
         private void buyButton_Click(object sender, EventArgs e)
         {
@@ -38,19 +40,22 @@ namespace seminar9
             {
                 stuff.PaymentMethod = "Ramburs";
             }
+
+
+            //cum fac chestia asta
             List<Equipment> equipBought = new List<Equipment>();
-            foreach(DataGridViewRow drow in dataGridView1.Rows)
+            foreach (DataGridViewRow drow in dataGridView1.Rows)
             {
                 Equipment equip = new Equipment();
-                foreach(DataGridViewCell dc in drow.Cells)
+                foreach (DataGridViewCell dc in drow.Cells)
                 {
                     equipBought.Add((Equipment)dc.Value);
-                    
+
                 }
-                
+
             }
             stuff.Equipments = equipBought; //lista cu echipamentele cumparate
-            
+
             SalesDatabase.boughtE.Add(stuff); //le am adaugat in baza de date, trebuie sa le afisezi si in formul din AdminPage
             MessageBox.Show("Comanda ta este in curs de procesare"); /*Hide();*/
             Hide();

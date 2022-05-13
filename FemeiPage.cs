@@ -22,7 +22,12 @@ namespace seminar9
 
             equipDataGrid2.AutoGenerateColumns = false; //ce face
 
-            equipDataGrid2.ColumnCount = 3;
+            equipDataGrid2.ColumnCount = 3; //am 3 coloane de afisat, descrierea, pretul si culoarea
+
+            //neaparat de pus astea, ca sa se coreleze datele cu capul tabelului
+            AddColumn(0, "description", "Descriere");
+            AddColumn(1, "price", "Pret");
+            AddColumn(2, "color", "Culoare");
 
             //butoane
             var addToCart = new DataGridViewButtonColumn();
@@ -37,6 +42,13 @@ namespace seminar9
             equipDataGrid2.DataSource = _equipRepository.GetFEMEI();
 
 
+        }
+
+        private void AddColumn(int index, string property, string header)
+        {
+            equipDataGrid2.Columns[index].HeaderText = header;
+            equipDataGrid2.Columns[index].DataPropertyName = property;
+            equipDataGrid2.Columns[index].DataPropertyName = property;
         }
 
         public static List<Equipment> equipmentsW = new List<Equipment>();
