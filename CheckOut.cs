@@ -60,5 +60,12 @@ namespace seminar9
             MessageBox.Show("Comanda ta este in curs de procesare"); /*Hide();*/
             Hide();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            var back = new Main();
+            back.Show();
+            Hide();
+        }
     }
 }

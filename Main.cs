@@ -28,16 +28,16 @@ namespace seminar9
             
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void userButton_Click(object sender, EventArgs e)
         {
-            var user = new UserPage();
+            var user = new Main();
             user.Show();
             Hide();
         }
 
-        private void planeSaveButton_Click_1(object sender, EventArgs e)
+        private void adminButton_Click_1(object sender, EventArgs e)
         {
-            var user = new AdminPage();
+            var user = new AuthPage();
             user.Show();
             Hide();
         }

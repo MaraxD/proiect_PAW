@@ -58,7 +58,7 @@ namespace seminar9
             this.equipDataGrid1.ReadOnly = true;
             this.equipDataGrid1.RowHeadersWidth = 62;
             this.equipDataGrid1.RowTemplate.Height = 28;
-            this.equipDataGrid1.Size = new System.Drawing.Size(776, 93);
+            this.equipDataGrid1.Size = new System.Drawing.Size(776, 376);
             this.equipDataGrid1.TabIndex = 6;
             // 
             // BarbatiPage

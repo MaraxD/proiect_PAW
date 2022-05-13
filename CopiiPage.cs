@@ -19,7 +19,7 @@ namespace seminar9
         {
             InitializeComponent();
             _equipRepository = new EquipRepository();
-            equipDataGrid3.AutoGenerateColumns = false; //ce face
+            equipDataGrid3.AutoGenerateColumns = false; 
 
             equipDataGrid3.ColumnCount = 3;
 
@@ -31,7 +31,7 @@ namespace seminar9
             var addToCart = new DataGridViewButtonColumn();
             addToCart.Text = "Add to cart";
             addToCart.Name = "addToCart";
-            addToCart.UseColumnTextForButtonValue = true; //ce face lol
+            addToCart.UseColumnTextForButtonValue = true; 
             equipDataGrid3.Columns.Add(addToCart);
 
 
@@ -76,5 +76,7 @@ namespace seminar9
             home.Show();
             Hide();
         }
+
+       
     }
 }

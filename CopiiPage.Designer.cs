@@ -53,12 +53,12 @@ namespace seminar9
             this.equipDataGrid3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.equipDataGrid3.BackgroundColor = System.Drawing.SystemColors.Control;
             this.equipDataGrid3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.equipDataGrid3.Location = new System.Drawing.Point(12, 106);
+            this.equipDataGrid3.Location = new System.Drawing.Point(12, 62);
             this.equipDataGrid3.Name = "equipDataGrid3";
             this.equipDataGrid3.ReadOnly = true;
             this.equipDataGrid3.RowHeadersWidth = 62;
             this.equipDataGrid3.RowTemplate.Height = 28;
-            this.equipDataGrid3.Size = new System.Drawing.Size(776, 305);
+            this.equipDataGrid3.Size = new System.Drawing.Size(776, 376);
             this.equipDataGrid3.TabIndex = 6;
             // 
             // CopiiPage

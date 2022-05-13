@@ -29,38 +29,38 @@ namespace seminar9
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.planeSaveButton = new System.Windows.Forms.Button();
+            this.userButton = new System.Windows.Forms.Button();
+            this.adminButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // userButton
             // 
-            this.button1.Location = new System.Drawing.Point(115, 167);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 31);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "User";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.userButton.Location = new System.Drawing.Point(115, 167);
+            this.userButton.Name = "userButton";
+            this.userButton.Size = new System.Drawing.Size(75, 31);
+            this.userButton.TabIndex = 9;
+            this.userButton.Text = "User";
+            this.userButton.UseVisualStyleBackColor = true;
+            this.userButton.Click += new System.EventHandler(this.userButton_Click);
             // 
-            // planeSaveButton
+            // adminButton
             // 
-            this.planeSaveButton.Location = new System.Drawing.Point(115, 82);
-            this.planeSaveButton.Name = "planeSaveButton";
-            this.planeSaveButton.Size = new System.Drawing.Size(75, 31);
-            this.planeSaveButton.TabIndex = 8;
-            this.planeSaveButton.Text = "Admin";
-            this.planeSaveButton.UseVisualStyleBackColor = true;
-            this.planeSaveButton.Click += new System.EventHandler(this.planeSaveButton_Click_1);
+            this.adminButton.Location = new System.Drawing.Point(115, 82);
+            this.adminButton.Name = "adminButton";
+            this.adminButton.Size = new System.Drawing.Size(75, 31);
+            this.adminButton.TabIndex = 8;
+            this.adminButton.Text = "Admin";
+            this.adminButton.UseVisualStyleBackColor = true;
+            this.adminButton.Click += new System.EventHandler(this.adminButton_Click_1);
             // 
-            // AddPlaneForm
+            // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(318, 316);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.planeSaveButton);
-            this.Name = "AddPlaneForm";
+            this.Controls.Add(this.userButton);
+            this.Controls.Add(this.adminButton);
+            this.Name = "Main";
             this.Text = "Form2";
             this.ResumeLayout(false);
 
@@ -68,7 +68,7 @@ namespace seminar9
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button planeSaveButton;
+        private System.Windows.Forms.Button userButton;
+        private System.Windows.Forms.Button adminButton;
     }
 }

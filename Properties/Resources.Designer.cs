@@ -63,6 +63,16 @@ namespace seminar9.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _221_2214080_back_arrow_vector_go_back_icon {
+            get {
+                object obj = ResourceManager.GetObject("221-2214080_back-arrow-vector-go-back-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap png_Home_Button_Icon_Png_Home_Bread_Crumbs_home_button_image {
             get {
                 object obj = ResourceManager.GetObject("png-Home-Button-Icon-Png-Home-Bread-Crumbs-home-button-image", resourceCulture);
