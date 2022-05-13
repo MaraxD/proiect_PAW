@@ -56,6 +56,7 @@ namespace seminar9
         {
             var checkOut = new CheckOut();
             checkOut.Show();
+            Hide();
         }
 
 

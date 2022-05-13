@@ -39,7 +39,16 @@ namespace seminar9
             else
             {
                 MessageBox.Show("Parola sau username ul sunt gresite");
+                usernameTextBox.Text = null;
+                passwordTextBox.Text = null;
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            var back = new Main();
+            back.Show();
+            Hide();
         }
     }
 }

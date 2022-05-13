@@ -64,6 +64,7 @@ namespace seminar9
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.salesDataView);
             this.Name = "AdminPage";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminPage";
             ((System.ComponentModel.ISupportInitialize)(this.salesDataView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

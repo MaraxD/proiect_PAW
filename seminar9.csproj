@@ -89,6 +89,12 @@
     <Compile Include="FemeiPage.Designer.cs">
       <DependentUpon>FemeiPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="StoresPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StoresPage.Designer.cs">
+      <DependentUpon>StoresPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StoresPage.resx">
+      <DependentUpon>StoresPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserPage.resx">
       <DependentUpon>UserPage.cs</DependentUpon>
@@ -172,6 +181,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\221-2214080_back-arrow-vector-go-back-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\get-up-arrow-png-pictures-99092.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up-black-arrow-clip-art-554669-removebg-preview.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

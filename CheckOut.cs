@@ -23,8 +23,20 @@ namespace seminar9
             //intreaba l pe prof daca e posibil asa ceva
             /*dataGridView1.DataSource = FemeiPage.equipmentsW;
             dataGridView1.DataSource = CopiiPage.equipmentsC;*/
+
+            sumValTotala();
         }
 
+
+        private void sumValTotala()
+        {
+            double sumTotal = 0;
+            foreach (var equip in dataGridView1.DataSource as List<Equipment>)
+            {
+                sumTotal += equip.Price;
+            }
+            valTotalaLabel.Text = Convert.ToString(sumTotal);
+        }
 
         private void buyButton_Click(object sender, EventArgs e)
         {
@@ -43,18 +55,12 @@ namespace seminar9
 
 
             //cum fac chestia asta
-            List<Equipment> equipBought = new List<Equipment>();
-            foreach (DataGridViewRow drow in dataGridView1.Rows)
+            foreach (var equips in dataGridView1.DataSource as List<Equipment>)
             {
-                Equipment equip = new Equipment();
-                foreach (DataGridViewCell dc in drow.Cells)
-                {
-                    equipBought.Add((Equipment)dc.Value);
-
-                }
-
+                stuff.Equipments.Description = equips.Description;
+                stuff.Equipments.Color = equips.Color;
+                stuff.Equipments.Price = equips.Price;
             }
-            stuff.Equipments = equipBought; //lista cu echipamentele cumparate
 
             SalesDatabase.boughtE.Add(stuff); //le am adaugat in baza de date, trebuie sa le afisezi si in formul din AdminPage
             MessageBox.Show("Comanda ta este in curs de procesare"); /*Hide();*/
@@ -63,7 +69,7 @@ namespace seminar9
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            var back = new Main();
+            var back = new UserPage();
             back.Show();
             Hide();
         }

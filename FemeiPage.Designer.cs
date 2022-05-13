@@ -42,12 +42,12 @@ namespace seminar9
             this.equipDataGrid2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.equipDataGrid2.BackgroundColor = System.Drawing.SystemColors.Control;
             this.equipDataGrid2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.equipDataGrid2.Location = new System.Drawing.Point(12, 91);
+            this.equipDataGrid2.Location = new System.Drawing.Point(12, 62);
             this.equipDataGrid2.Name = "equipDataGrid2";
             this.equipDataGrid2.ReadOnly = true;
             this.equipDataGrid2.RowHeadersWidth = 62;
             this.equipDataGrid2.RowTemplate.Height = 28;
-            this.equipDataGrid2.Size = new System.Drawing.Size(833, 471);
+            this.equipDataGrid2.Size = new System.Drawing.Size(833, 512);
             this.equipDataGrid2.TabIndex = 3;
             // 
             // pictureBox1
@@ -69,6 +69,7 @@ namespace seminar9
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.equipDataGrid2);
             this.Name = "FemeiPage";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FemeiPage";
             ((System.ComponentModel.ISupportInitialize)(this.equipDataGrid2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

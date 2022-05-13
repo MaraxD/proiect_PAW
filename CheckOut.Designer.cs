@@ -41,6 +41,9 @@ namespace seminar9
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.buyButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.valTotalaLabel = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -134,7 +137,7 @@ namespace seminar9
             // 
             // buyButton
             // 
-            this.buyButton.Location = new System.Drawing.Point(560, 601);
+            this.buyButton.Location = new System.Drawing.Point(560, 627);
             this.buyButton.Name = "buyButton";
             this.buyButton.Size = new System.Drawing.Size(137, 45);
             this.buyButton.TabIndex = 11;
@@ -153,11 +156,41 @@ namespace seminar9
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(437, 594);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(120, 20);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Valoare Totala: ";
+            // 
+            // valTotalaLabel
+            // 
+            this.valTotalaLabel.AutoSize = true;
+            this.valTotalaLabel.Location = new System.Drawing.Point(606, 594);
+            this.valTotalaLabel.Name = "valTotalaLabel";
+            this.valTotalaLabel.Size = new System.Drawing.Size(18, 20);
+            this.valTotalaLabel.TabIndex = 14;
+            this.valTotalaLabel.Text = "0";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(669, 594);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(28, 20);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "lei ";
+            // 
             // CheckOut
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(724, 684);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.valTotalaLabel);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buyButton);
             this.Controls.Add(this.textBox3);
@@ -171,6 +204,7 @@ namespace seminar9
             this.Controls.Add(this.prenumeText);
             this.Controls.Add(this.numeText);
             this.Name = "CheckOut";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CheckOut";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -193,5 +227,8 @@ namespace seminar9
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button buyButton;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label valTotalaLabel;
+        private System.Windows.Forms.Label label4;
     }
 }

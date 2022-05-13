@@ -8,5 +8,8 @@ namespace seminar9.Entities
 {
     class Store
     {
+        public string Location { get; set; }
+        public string PhoneNumber { get; set; }
+        public string City { get; set; }
     }
 }

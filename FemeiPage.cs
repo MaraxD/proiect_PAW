@@ -77,5 +77,7 @@ namespace seminar9
             home.Show();
             Hide();
         }
+
+       
     }
 }

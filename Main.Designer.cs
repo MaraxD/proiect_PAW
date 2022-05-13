@@ -61,6 +61,7 @@ namespace seminar9
             this.Controls.Add(this.userButton);
             this.Controls.Add(this.adminButton);
             this.Name = "Main";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             this.ResumeLayout(false);
 

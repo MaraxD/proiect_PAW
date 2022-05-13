@@ -1,7 +1,7 @@
 ﻿
 namespace seminar9
 {
-    partial class CopiiPage
+    partial class StoresPage
     {
         /// <summary>
         /// Required designer variable.
@@ -29,26 +29,26 @@ namespace seminar9
         /// </summary>
         private void InitializeComponent()
         {
-            this.equipDataGrid3 = new System.Windows.Forms.DataGridView();
+            this.equipDataGrid1 = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.equipDataGrid3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.equipDataGrid1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // equipDataGrid3
+            // equipDataGrid1
             // 
-            this.equipDataGrid3.AllowUserToAddRows = false;
-            this.equipDataGrid3.AllowUserToDeleteRows = false;
-            this.equipDataGrid3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.equipDataGrid3.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.equipDataGrid3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.equipDataGrid3.Location = new System.Drawing.Point(12, 62);
-            this.equipDataGrid3.Name = "equipDataGrid3";
-            this.equipDataGrid3.ReadOnly = true;
-            this.equipDataGrid3.RowHeadersWidth = 62;
-            this.equipDataGrid3.RowTemplate.Height = 28;
-            this.equipDataGrid3.Size = new System.Drawing.Size(833, 512);
-            this.equipDataGrid3.TabIndex = 6;
+            this.equipDataGrid1.AllowUserToAddRows = false;
+            this.equipDataGrid1.AllowUserToDeleteRows = false;
+            this.equipDataGrid1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.equipDataGrid1.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.equipDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.equipDataGrid1.Location = new System.Drawing.Point(12, 62);
+            this.equipDataGrid1.Name = "equipDataGrid1";
+            this.equipDataGrid1.ReadOnly = true;
+            this.equipDataGrid1.RowHeadersWidth = 62;
+            this.equipDataGrid1.RowTemplate.Height = 28;
+            this.equipDataGrid1.Size = new System.Drawing.Size(833, 512);
+            this.equipDataGrid1.TabIndex = 8;
             // 
             // pictureBox1
             // 
@@ -57,21 +57,19 @@ namespace seminar9
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(61, 44);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // CopiiPage
+            // StoresPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(857, 586);
-            this.Controls.Add(this.equipDataGrid3);
+            this.Controls.Add(this.equipDataGrid1);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "CopiiPage";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CopiiPage";
-            ((System.ComponentModel.ISupportInitialize)(this.equipDataGrid3)).EndInit();
+            this.Name = "StoresPage";
+            this.Text = "StoresPage";
+            ((System.ComponentModel.ISupportInitialize)(this.equipDataGrid1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -79,7 +77,7 @@ namespace seminar9
 
         #endregion
 
+        private System.Windows.Forms.DataGridView equipDataGrid1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.DataGridView equipDataGrid3;
     }
 }

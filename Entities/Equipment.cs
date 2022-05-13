@@ -18,9 +18,6 @@ namespace seminar9.Entities
 
         public string Color { get; set; }
 
-        public static implicit operator Equipment(List<Equipment> v)
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }

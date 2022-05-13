@@ -30,7 +30,7 @@ namespace seminar9
 
         private void userButton_Click(object sender, EventArgs e)
         {
-            var user = new Main();
+            var user = new UserPage();
             user.Show();
             Hide();
         }
