@@ -29,26 +29,26 @@ namespace seminar9
         /// </summary>
         private void InitializeComponent()
         {
-            this.equipDataGrid1 = new System.Windows.Forms.DataGridView();
+            this.storesDataGrid = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.equipDataGrid1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.storesDataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // equipDataGrid1
+            // storesDataGrid
             // 
-            this.equipDataGrid1.AllowUserToAddRows = false;
-            this.equipDataGrid1.AllowUserToDeleteRows = false;
-            this.equipDataGrid1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.equipDataGrid1.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.equipDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.equipDataGrid1.Location = new System.Drawing.Point(12, 62);
-            this.equipDataGrid1.Name = "equipDataGrid1";
-            this.equipDataGrid1.ReadOnly = true;
-            this.equipDataGrid1.RowHeadersWidth = 62;
-            this.equipDataGrid1.RowTemplate.Height = 28;
-            this.equipDataGrid1.Size = new System.Drawing.Size(833, 512);
-            this.equipDataGrid1.TabIndex = 8;
+            this.storesDataGrid.AllowUserToAddRows = false;
+            this.storesDataGrid.AllowUserToDeleteRows = false;
+            this.storesDataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.storesDataGrid.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.storesDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.storesDataGrid.Location = new System.Drawing.Point(49, 185);
+            this.storesDataGrid.Name = "storesDataGrid";
+            this.storesDataGrid.ReadOnly = true;
+            this.storesDataGrid.RowHeadersWidth = 62;
+            this.storesDataGrid.RowTemplate.Height = 28;
+            this.storesDataGrid.Size = new System.Drawing.Size(1214, 384);
+            this.storesDataGrid.TabIndex = 8;
             // 
             // pictureBox1
             // 
@@ -59,17 +59,21 @@ namespace seminar9
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // StoresPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(857, 586);
-            this.Controls.Add(this.equipDataGrid1);
+            this.BackgroundImage = global::seminar9.Properties.Resources.map2;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ClientSize = new System.Drawing.Size(1321, 769);
+            this.Controls.Add(this.storesDataGrid);
             this.Controls.Add(this.pictureBox1);
             this.Name = "StoresPage";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StoresPage";
-            ((System.ComponentModel.ISupportInitialize)(this.equipDataGrid1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.storesDataGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -77,7 +81,7 @@ namespace seminar9
 
         #endregion
 
-        private System.Windows.Forms.DataGridView equipDataGrid1;
+        private System.Windows.Forms.DataGridView storesDataGrid;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

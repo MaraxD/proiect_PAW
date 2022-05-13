@@ -59,6 +59,13 @@ namespace seminar9
             Hide();
         }
 
+        private void magazineToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var stores = new StoresPage();
+            stores.Show();
+            Hide();
+        }
+
 
         //abuzarea extension methods impiedica testarea codului
     }

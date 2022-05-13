@@ -46,96 +46,97 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdminPage.cs">
+    <Compile Include="Pages\AdminPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminPage.Designer.cs">
+    <Compile Include="Pages\AdminPage.Designer.cs">
       <DependentUpon>AdminPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="AuthPage.cs">
+    <Compile Include="Pages\AuthPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AuthPage.Designer.cs">
+    <Compile Include="Pages\AuthPage.Designer.cs">
       <DependentUpon>AuthPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="BarbatiPage.cs">
+    <Compile Include="Pages\BarbatiPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BarbatiPage.Designer.cs">
+    <Compile Include="Pages\BarbatiPage.Designer.cs">
       <DependentUpon>BarbatiPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="CheckOut.cs">
+    <Compile Include="Pages\CheckOut.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CheckOut.Designer.cs">
+    <Compile Include="Pages\CheckOut.Designer.cs">
       <DependentUpon>CheckOut.cs</DependentUpon>
     </Compile>
-    <Compile Include="CopiiPage.cs">
+    <Compile Include="Pages\CopiiPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CopiiPage.Designer.cs">
+    <Compile Include="Pages\CopiiPage.Designer.cs">
       <DependentUpon>CopiiPage.cs</DependentUpon>
     </Compile>
     <Compile Include="Database\BarbatiDatabase.cs" />
     <Compile Include="Database\CopiiDatabase.cs" />
     <Compile Include="Database\FemeiDatabase.cs" />
     <Compile Include="Database\SalesDatabase.cs" />
+    <Compile Include="Database\StoresDatabase.cs" />
     <Compile Include="Entities\Equipment.cs" />
     <Compile Include="Entities\Sales.cs" />
     <Compile Include="Entities\Store.cs" />
-    <Compile Include="FemeiPage.cs">
+    <Compile Include="Pages\FemeiPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FemeiPage.Designer.cs">
+    <Compile Include="Pages\FemeiPage.Designer.cs">
       <DependentUpon>FemeiPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="StoresPage.cs">
+    <Compile Include="Pages\StoresPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StoresPage.Designer.cs">
+    <Compile Include="Pages\StoresPage.Designer.cs">
       <DependentUpon>StoresPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserPage.cs">
+    <Compile Include="Pages\UserPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserPage.Designer.cs">
+    <Compile Include="Pages\UserPage.Designer.cs">
       <DependentUpon>UserPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main.cs">
+    <Compile Include="Pages\Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main.Designer.cs">
+    <Compile Include="Pages\Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\EquipRepository.cs" />
     <Compile Include="Repositories\IEquipRepository.cs" />
-    <EmbeddedResource Include="AdminPage.resx">
+    <EmbeddedResource Include="Pages\AdminPage.resx">
       <DependentUpon>AdminPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AuthPage.resx">
+    <EmbeddedResource Include="Pages\AuthPage.resx">
       <DependentUpon>AuthPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BarbatiPage.resx">
+    <EmbeddedResource Include="Pages\BarbatiPage.resx">
       <DependentUpon>BarbatiPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CheckOut.resx">
+    <EmbeddedResource Include="Pages\CheckOut.resx">
       <DependentUpon>CheckOut.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CopiiPage.resx">
+    <EmbeddedResource Include="Pages\CopiiPage.resx">
       <DependentUpon>CopiiPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FemeiPage.resx">
+    <EmbeddedResource Include="Pages\FemeiPage.resx">
       <DependentUpon>FemeiPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main.resx">
+    <EmbeddedResource Include="Pages\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StoresPage.resx">
+    <EmbeddedResource Include="Pages\StoresPage.resx">
       <DependentUpon>StoresPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserPage.resx">
+    <EmbeddedResource Include="Pages\UserPage.resx">
       <DependentUpon>UserPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -187,6 +188,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\up-black-arrow-clip-art-554669-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

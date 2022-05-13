@@ -30,6 +30,7 @@ namespace seminar9
             //butoane
             var addToCart = new DataGridViewButtonColumn();
             addToCart.Text = "Add to cart";
+            addToCart.HeaderText = " ";
             addToCart.Name = "addToCart";
             addToCart.UseColumnTextForButtonValue = true; 
             equipDataGrid3.Columns.Add(addToCart);

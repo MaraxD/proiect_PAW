@@ -44,6 +44,7 @@ namespace seminar9
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.magazineToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -64,7 +65,8 @@ namespace seminar9
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.wStripMenuItem,
             this.mStripMenuItem,
-            this.cStripMenuItem});
+            this.cStripMenuItem,
+            this.magazineToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 70);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(54, 10, 0, 1);
@@ -183,6 +185,15 @@ namespace seminar9
             this.label3.TabIndex = 15;
             this.label3.Text = "SuperSport";
             // 
+            // magazineToolStripMenuItem
+            // 
+            this.magazineToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.magazineToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.magazineToolStripMenuItem.Name = "magazineToolStripMenuItem";
+            this.magazineToolStripMenuItem.Size = new System.Drawing.Size(104, 29);
+            this.magazineToolStripMenuItem.Text = "Magazine";
+            this.magazineToolStripMenuItem.Click += new System.EventHandler(this.magazineToolStripMenuItem_Click);
+            // 
             // UserPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -231,6 +242,7 @@ namespace seminar9
         private PictureBox pictureBox5;
         private Label label2;
         private Label label3;
+        private ToolStripMenuItem magazineToolStripMenuItem;
     }
 }
 

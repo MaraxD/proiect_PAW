@@ -32,6 +32,7 @@ namespace seminar9
             //butoane
             var addToCart = new DataGridViewButtonColumn();
             addToCart.Text = "Add to cart";
+            addToCart.HeaderText = " ";
             addToCart.Name = "addToCart";
             addToCart.UseColumnTextForButtonValue = true; //ce face lol
             equipDataGrid2.Columns.Add(addToCart);
@@ -47,7 +48,6 @@ namespace seminar9
         private void AddColumn(int index, string property, string header)
         {
             equipDataGrid2.Columns[index].HeaderText = header;
-            equipDataGrid2.Columns[index].DataPropertyName = property;
             equipDataGrid2.Columns[index].DataPropertyName = property;
         }
 
