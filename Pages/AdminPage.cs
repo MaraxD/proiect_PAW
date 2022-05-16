@@ -1,4 +1,5 @@
-﻿using seminar9.Repositories;
+﻿using seminar9.Database;
+using seminar9.Entities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,20 +12,21 @@ using System.Windows.Forms;
 
 namespace seminar9
 {
-    public partial class FemeiPage : Form
+    public partial class AdminPage : Form
     {
-        private IEquipRepository _equipRepository;
-        public FemeiPage()
+        public AdminPage()
         {
             InitializeComponent();
-            _equipRepository = new EquipRepository();
-            equipDataGrid2.DataSource = _equipRepository.GetFEMEI();
+            salesDataView.DataSource = SalesDatabase.boughtE; //initial, baza mea de date e goala
+            
         }
+
+       
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            var home = new UserPage();
-            home.Show();
+            var exit = new Main();
+            exit.Show();
             Hide();
         }
     }

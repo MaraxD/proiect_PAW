@@ -14,6 +14,8 @@ namespace seminar9.Entities
 
         public string Surname { get; set; }
 
+        public Equipment Equipments { get; set; }
+
         public string PaymentMethod { get; set; }
 
         public double TotalValue { get; set; }

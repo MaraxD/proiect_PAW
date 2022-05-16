@@ -1,6 +1,7 @@
 ﻿using seminar9.Entities;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,7 +10,7 @@ namespace seminar9.Database
 {
     public static class CopiiDatabase
     {
-        public static List<Equipment> Equipments = new List<Equipment>()
+        public static BindingList<Equipment> Equipments = new BindingList<Equipment>()
         {
            
 

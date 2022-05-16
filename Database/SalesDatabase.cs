@@ -1,4 +1,5 @@
-﻿using System;
+﻿using seminar9.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,6 @@ namespace seminar9.Database
 {
     class SalesDatabase
     {
-
+        public static List<Sales> boughtE = new List<Sales>();
     }
 }

@@ -8,7 +8,7 @@ namespace seminar9.Entities
 {
     public class Equipment //modificatorul de acces default este internal
     {
-
+        
         //camp->variab privata
         //proprietate->incapsulare a unui camp
 
@@ -18,5 +18,6 @@ namespace seminar9.Entities
 
         public string Color { get; set; }
 
+       
     }
 }
