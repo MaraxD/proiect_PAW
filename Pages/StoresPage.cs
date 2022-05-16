@@ -16,7 +16,7 @@ namespace seminar9
         public StoresPage()
         {
             InitializeComponent();
-            storesDataGrid.AutoGenerateColumns = false; //ce face
+            storesDataGrid.AutoGenerateColumns = false; 
             storesDataGrid.ColumnCount = 4;
 
             AddColumn(0, "city", "Oras");

@@ -56,7 +56,7 @@ namespace seminar9
         {
             var checkOut = new CheckOut();
             checkOut.Show();
-            Hide();
+           
         }
 
         private void magazineToolStripMenuItem_Click(object sender, EventArgs e)
@@ -65,8 +65,5 @@ namespace seminar9
             stores.Show();
             Hide();
         }
-
-
-        //abuzarea extension methods impiedica testarea codului
     }
 }

@@ -51,7 +51,7 @@ namespace seminar9
             equipDataGrid1.Columns[index].DataPropertyName = property;
         }
 
-        public static List<Equipment> equipmentsM = new List<Equipment>();
+        public static BindingList<Equipment> equipmentsM = new BindingList<Equipment>();
 
         private void cellClick(object sender, DataGridViewCellEventArgs e)
         {

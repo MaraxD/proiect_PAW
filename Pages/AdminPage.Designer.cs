@@ -37,18 +37,20 @@ namespace seminar9
             // 
             // salesDataView
             // 
+            this.salesDataView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.salesDataView.BackgroundColor = System.Drawing.SystemColors.Control;
             this.salesDataView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.salesDataView.Location = new System.Drawing.Point(12, 53);
             this.salesDataView.Name = "salesDataView";
             this.salesDataView.RowHeadersWidth = 62;
             this.salesDataView.RowTemplate.Height = 28;
-            this.salesDataView.Size = new System.Drawing.Size(776, 376);
+            this.salesDataView.Size = new System.Drawing.Size(1363, 376);
             this.salesDataView.TabIndex = 0;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::seminar9.Properties.Resources.png_transparent_computer_icons_logout_angle_text_black;
-            this.pictureBox1.Location = new System.Drawing.Point(737, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(1324, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(51, 44);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -60,7 +62,7 @@ namespace seminar9
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 431);
+            this.ClientSize = new System.Drawing.Size(1387, 443);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.salesDataView);
             this.Name = "AdminPage";

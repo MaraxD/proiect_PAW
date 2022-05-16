@@ -17,9 +17,12 @@ namespace seminar9
         public AdminPage()
         {
             InitializeComponent();
+            //salesDataView.AutoGenerateColumns = false;
             salesDataView.DataSource = SalesDatabase.boughtE; //initial, baza mea de date e goala
             
         }
+
+     
 
        
 

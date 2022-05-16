@@ -9,6 +9,14 @@ namespace seminar9.Database
 {
     class SalesDatabase
     {
-        public static List<Sales> boughtE = new List<Sales>();
+        public static List<Sales> boughtE = new List<Sales>()
+        {
+            new Sales()
+            {
+                IdSale=Guid.NewGuid(),
+                FullName="de test"
+
+            }
+        };
     }
 }

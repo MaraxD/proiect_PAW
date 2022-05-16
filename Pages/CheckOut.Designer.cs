@@ -50,32 +50,33 @@ namespace seminar9
             // 
             // numeText
             // 
-            this.numeText.Location = new System.Drawing.Point(223, 74);
+            this.numeText.Location = new System.Drawing.Point(195, 74);
             this.numeText.Name = "numeText";
             this.numeText.Size = new System.Drawing.Size(240, 26);
             this.numeText.TabIndex = 0;
             // 
             // prenumeText
             // 
-            this.prenumeText.Location = new System.Drawing.Point(223, 131);
+            this.prenumeText.Location = new System.Drawing.Point(195, 131);
             this.prenumeText.Name = "prenumeText";
             this.prenumeText.Size = new System.Drawing.Size(240, 26);
             this.prenumeText.TabIndex = 1;
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(35, 397);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(662, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(700, 150);
             this.dataGridView1.TabIndex = 3;
             // 
             // nameLabel
             // 
             this.nameLabel.AutoSize = true;
-            this.nameLabel.Location = new System.Drawing.Point(59, 79);
+            this.nameLabel.Location = new System.Drawing.Point(31, 79);
             this.nameLabel.Name = "nameLabel";
             this.nameLabel.Size = new System.Drawing.Size(51, 20);
             this.nameLabel.TabIndex = 4;
@@ -84,7 +85,7 @@ namespace seminar9
             // prenumeLabel
             // 
             this.prenumeLabel.AutoSize = true;
-            this.prenumeLabel.Location = new System.Drawing.Point(59, 131);
+            this.prenumeLabel.Location = new System.Drawing.Point(31, 131);
             this.prenumeLabel.Name = "prenumeLabel";
             this.prenumeLabel.Size = new System.Drawing.Size(73, 20);
             this.prenumeLabel.TabIndex = 5;
@@ -93,7 +94,7 @@ namespace seminar9
             // paymentLabel
             // 
             this.paymentLabel.AutoSize = true;
-            this.paymentLabel.Location = new System.Drawing.Point(59, 185);
+            this.paymentLabel.Location = new System.Drawing.Point(31, 185);
             this.paymentLabel.Name = "paymentLabel";
             this.paymentLabel.Size = new System.Drawing.Size(144, 20);
             this.paymentLabel.TabIndex = 6;
@@ -102,7 +103,7 @@ namespace seminar9
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(59, 284);
+            this.label1.Location = new System.Drawing.Point(31, 284);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(60, 20);
             this.label1.TabIndex = 9;
@@ -110,14 +111,14 @@ namespace seminar9
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(63, 327);
+            this.textBox3.Location = new System.Drawing.Point(35, 327);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(400, 26);
             this.textBox3.TabIndex = 10;
             // 
             // buyButton
             // 
-            this.buyButton.Location = new System.Drawing.Point(560, 627);
+            this.buyButton.Location = new System.Drawing.Point(598, 627);
             this.buyButton.Name = "buyButton";
             this.buyButton.Size = new System.Drawing.Size(137, 45);
             this.buyButton.TabIndex = 11;
@@ -139,7 +140,7 @@ namespace seminar9
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(437, 594);
+            this.label2.Location = new System.Drawing.Point(475, 576);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(120, 20);
             this.label2.TabIndex = 13;
@@ -148,7 +149,7 @@ namespace seminar9
             // valTotalaLabel
             // 
             this.valTotalaLabel.AutoSize = true;
-            this.valTotalaLabel.Location = new System.Drawing.Point(606, 594);
+            this.valTotalaLabel.Location = new System.Drawing.Point(644, 576);
             this.valTotalaLabel.Name = "valTotalaLabel";
             this.valTotalaLabel.Size = new System.Drawing.Size(18, 20);
             this.valTotalaLabel.TabIndex = 14;
@@ -157,7 +158,7 @@ namespace seminar9
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(669, 594);
+            this.label4.Location = new System.Drawing.Point(707, 576);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(28, 20);
             this.label4.TabIndex = 15;
@@ -166,7 +167,7 @@ namespace seminar9
             // onlineRB
             // 
             this.onlineRB.AutoSize = true;
-            this.onlineRB.Location = new System.Drawing.Point(64, 229);
+            this.onlineRB.Location = new System.Drawing.Point(36, 229);
             this.onlineRB.Name = "onlineRB";
             this.onlineRB.Size = new System.Drawing.Size(79, 24);
             this.onlineRB.TabIndex = 16;
@@ -177,7 +178,7 @@ namespace seminar9
             // rambursRB
             // 
             this.rambursRB.AutoSize = true;
-            this.rambursRB.Location = new System.Drawing.Point(188, 229);
+            this.rambursRB.Location = new System.Drawing.Point(160, 229);
             this.rambursRB.Name = "rambursRB";
             this.rambursRB.Size = new System.Drawing.Size(99, 24);
             this.rambursRB.TabIndex = 17;
@@ -189,7 +190,7 @@ namespace seminar9
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(724, 684);
+            this.ClientSize = new System.Drawing.Size(762, 684);
             this.Controls.Add(this.rambursRB);
             this.Controls.Add(this.onlineRB);
             this.Controls.Add(this.label4);

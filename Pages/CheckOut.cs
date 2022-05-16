@@ -18,7 +18,26 @@ namespace seminar9
         {
             InitializeComponent();
             //afisez chestiile cumparate in dataGridul de pe pagina asta
+            dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.ColumnCount = 3;
+
+            AddColumn(0, "description", "Descriere");
+            AddColumn(1, "price", "Pret");
+            AddColumn(2, "color", "Culoare");
+
+            //butonul de delete
+            var delete = new DataGridViewButtonColumn();
+            delete.HeaderText = " ";
+            delete.Text = "Delete";
+            delete.Name = "delete";
+            delete.UseColumnTextForButtonValue = true;
+            dataGridView1.Columns.Add(delete);
+
+
+            dataGridView1.CellClick += delete_cellClick;
+            dataGridView1.DataSource = null;
             dataGridView1.DataSource = BarbatiPage.equipmentsM;
+
 
             //intreaba l pe prof daca e posibil asa ceva
             /*dataGridView1.DataSource = FemeiPage.equipmentsW;
@@ -27,44 +46,72 @@ namespace seminar9
             sumValTotala();
         }
 
+        private void delete_cellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0)
+                return;
+            if (e.ColumnIndex == dataGridView1.Columns["delete"].Index)
+            {
+                var equip = dataGridView1.CurrentRow.DataBoundItem as Equipment;
+                BarbatiPage.equipmentsM.Remove(equip);
+            }
+            sumValTotala();
+            dataGridView1.Refresh();
 
-        private void sumValTotala()
+        }
+
+        private void AddColumn(int index, string property, string header)
+        {
+            dataGridView1.Columns[index].HeaderText = header;
+            dataGridView1.Columns[index].DataPropertyName = property;
+        }
+
+
+        private double sumValTotala()
         {
             double sumTotal = 0;
-            foreach (var equip in dataGridView1.DataSource as List<Equipment>)
+            foreach (var equip in dataGridView1.DataSource as BindingList<Equipment>)
             {
                 sumTotal += equip.Price;
             }
             valTotalaLabel.Text = Convert.ToString(sumTotal);
+            return Convert.ToDouble(valTotalaLabel.Text);
         }
 
         private void buyButton_Click(object sender, EventArgs e)
         {
-            var stuff = new Sales();
-            stuff.IdSale = Guid.NewGuid();
-            stuff.Name = numeText.Text;
-            stuff.Surname = prenumeText.Text;
-            if (onlineRB.Checked==true)
+            if (numeText.Text == " " ||
+                prenumeText.Text == " " ||
+                (onlineRB.Checked == false && rambursRB.Checked == false) || textBox3.Text == " ")
             {
-                stuff.PaymentMethod = onlineRB.Text;
+                MessageBox.Show("cateva campuri au ramas necompletate!!");
             }
             else
             {
-                stuff.PaymentMethod = rambursRB.Text;
+                var stuff = new Sales();
+                stuff.IdSale = Guid.NewGuid();
+                stuff.FullName = numeText.Text + " " + prenumeText.Text;
+                if (onlineRB.Checked == true)
+                {
+                    stuff.PaymentMethod = onlineRB.Text;
+                }
+                else
+                {
+                    stuff.PaymentMethod = rambursRB.Text;
+                }
+
+                foreach (var equips in dataGridView1.DataSource as BindingList<Equipment>)
+                {
+                    stuff.equipDescription = equips.Description;
+                }
+
+                stuff.TotalValue = sumValTotala();
+
+                SalesDatabase.boughtE.Add(stuff); //le am adaugat in baza de date, trebuie sa le afisezi si in formul din AdminPage
+                MessageBox.Show("Comanda ta este in curs de procesare");
+                Hide();
+                
             }
-
-
-            //cum fac chestia asta
-            foreach (var equips in dataGridView1.DataSource as List<Equipment>)
-            {
-                stuff.Equipments.Description = equips.Description;
-                stuff.Equipments.Color = equips.Color;
-                stuff.Equipments.Price = Convert.ToDouble(equips.Price);
-            }
-
-            SalesDatabase.boughtE.Add(stuff); //le am adaugat in baza de date, trebuie sa le afisezi si in formul din AdminPage
-            MessageBox.Show("Comanda ta este in curs de procesare"); /*Hide();*/
-            Hide();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -73,5 +120,6 @@ namespace seminar9
             back.Show();
             Hide();
         }
+
     }
 }
