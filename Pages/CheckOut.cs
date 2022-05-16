@@ -44,13 +44,13 @@ namespace seminar9
             stuff.IdSale = Guid.NewGuid();
             stuff.Name = numeText.Text;
             stuff.Surname = prenumeText.Text;
-            if (onlineCheckBox.Checked)
+            if (onlineRB.Checked==true)
             {
-                stuff.PaymentMethod = "Online";
+                stuff.PaymentMethod = onlineRB.Text;
             }
             else
             {
-                stuff.PaymentMethod = "Ramburs";
+                stuff.PaymentMethod = rambursRB.Text;
             }
 
 
@@ -59,7 +59,7 @@ namespace seminar9
             {
                 stuff.Equipments.Description = equips.Description;
                 stuff.Equipments.Color = equips.Color;
-                stuff.Equipments.Price = equips.Price;
+                stuff.Equipments.Price = Convert.ToDouble(equips.Price);
             }
 
             SalesDatabase.boughtE.Add(stuff); //le am adaugat in baza de date, trebuie sa le afisezi si in formul din AdminPage

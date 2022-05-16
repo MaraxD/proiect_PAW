@@ -35,8 +35,6 @@ namespace seminar9
             this.nameLabel = new System.Windows.Forms.Label();
             this.prenumeLabel = new System.Windows.Forms.Label();
             this.paymentLabel = new System.Windows.Forms.Label();
-            this.onlineCheckBox = new System.Windows.Forms.CheckBox();
-            this.rambursCheckBox = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.buyButton = new System.Windows.Forms.Button();
@@ -44,6 +42,8 @@ namespace seminar9
             this.label2 = new System.Windows.Forms.Label();
             this.valTotalaLabel = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.onlineRB = new System.Windows.Forms.RadioButton();
+            this.rambursRB = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -98,26 +98,6 @@ namespace seminar9
             this.paymentLabel.Size = new System.Drawing.Size(144, 20);
             this.paymentLabel.TabIndex = 6;
             this.paymentLabel.Text = "Modalitate de plata";
-            // 
-            // onlineCheckBox
-            // 
-            this.onlineCheckBox.AutoSize = true;
-            this.onlineCheckBox.Location = new System.Drawing.Point(63, 224);
-            this.onlineCheckBox.Name = "onlineCheckBox";
-            this.onlineCheckBox.Size = new System.Drawing.Size(80, 24);
-            this.onlineCheckBox.TabIndex = 7;
-            this.onlineCheckBox.Text = "Online";
-            this.onlineCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // rambursCheckBox
-            // 
-            this.rambursCheckBox.AutoSize = true;
-            this.rambursCheckBox.Location = new System.Drawing.Point(223, 224);
-            this.rambursCheckBox.Name = "rambursCheckBox";
-            this.rambursCheckBox.Size = new System.Drawing.Size(100, 24);
-            this.rambursCheckBox.TabIndex = 8;
-            this.rambursCheckBox.Text = "Ramburs";
-            this.rambursCheckBox.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -183,11 +163,35 @@ namespace seminar9
             this.label4.TabIndex = 15;
             this.label4.Text = "lei ";
             // 
+            // onlineRB
+            // 
+            this.onlineRB.AutoSize = true;
+            this.onlineRB.Location = new System.Drawing.Point(64, 229);
+            this.onlineRB.Name = "onlineRB";
+            this.onlineRB.Size = new System.Drawing.Size(79, 24);
+            this.onlineRB.TabIndex = 16;
+            this.onlineRB.TabStop = true;
+            this.onlineRB.Text = "Online";
+            this.onlineRB.UseVisualStyleBackColor = true;
+            // 
+            // rambursRB
+            // 
+            this.rambursRB.AutoSize = true;
+            this.rambursRB.Location = new System.Drawing.Point(188, 229);
+            this.rambursRB.Name = "rambursRB";
+            this.rambursRB.Size = new System.Drawing.Size(99, 24);
+            this.rambursRB.TabIndex = 17;
+            this.rambursRB.TabStop = true;
+            this.rambursRB.Text = "Ramburs";
+            this.rambursRB.UseVisualStyleBackColor = true;
+            // 
             // CheckOut
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(724, 684);
+            this.Controls.Add(this.rambursRB);
+            this.Controls.Add(this.onlineRB);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.valTotalaLabel);
             this.Controls.Add(this.label2);
@@ -195,8 +199,6 @@ namespace seminar9
             this.Controls.Add(this.buyButton);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.rambursCheckBox);
-            this.Controls.Add(this.onlineCheckBox);
             this.Controls.Add(this.paymentLabel);
             this.Controls.Add(this.prenumeLabel);
             this.Controls.Add(this.nameLabel);
@@ -221,8 +223,6 @@ namespace seminar9
         private System.Windows.Forms.Label nameLabel;
         private System.Windows.Forms.Label prenumeLabel;
         private System.Windows.Forms.Label paymentLabel;
-        private System.Windows.Forms.CheckBox onlineCheckBox;
-        private System.Windows.Forms.CheckBox rambursCheckBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button buyButton;
@@ -230,5 +230,7 @@ namespace seminar9
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label valTotalaLabel;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.RadioButton onlineRB;
+        private System.Windows.Forms.RadioButton rambursRB;
     }
 }
