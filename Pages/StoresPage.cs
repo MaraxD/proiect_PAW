@@ -19,10 +19,10 @@ namespace seminar9
             storesDataGrid.AutoGenerateColumns = false; 
             storesDataGrid.ColumnCount = 4;
 
-            AddColumn(0, "city", "Oras");
-            AddColumn(1, "location", "Adresa");
-            AddColumn(2, "phonenr", "telefon"); //bro dc nu apar
-            AddColumn(3, "program", "Program");
+            AddColumn(0, "City", "Oras");
+            AddColumn(1, "Location", "Adresa");
+            AddColumn(2, "PhoneNumber", "telefon"); //bro dc nu apar
+            AddColumn(3, "Program", "Program");
 
             storesDataGrid.DataSource = StoresDatabase.stores;
 
