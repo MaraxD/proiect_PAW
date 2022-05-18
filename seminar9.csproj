@@ -90,6 +90,12 @@
     <Compile Include="Pages\DBAdmin.Designer.cs">
       <DependentUpon>DBAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pages\EditFormDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\EditFormDB.Designer.cs">
+      <DependentUpon>EditFormDB.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pages\FemeiPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +141,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\DBAdmin.resx">
       <DependentUpon>DBAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\EditFormDB.resx">
+      <DependentUpon>EditFormDB.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\FemeiPage.resx">
       <DependentUpon>FemeiPage.cs</DependentUpon>

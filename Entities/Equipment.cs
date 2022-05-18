@@ -20,6 +20,9 @@ namespace seminar9.Entities
 
         public string Color { get; set; }
 
-       
+        //de fct asta, ca sa fie mai eficient
+        public string Category { get; set; }
+
+
     }
 }

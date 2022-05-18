@@ -81,16 +81,40 @@ namespace seminar9
             return Convert.ToDouble(valTotalaLabel.Text);
         }
 
-        private void buyButton_Click(object sender, EventArgs e)
+        private void textBoxName_Validating(object sender, CancelEventArgs e)
         {
-            if (numeText.Text == " " ||
-                prenumeText.Text == " " ||
-                (onlineRB.Checked == false && rambursRB.Checked == false) || textBox3.Text == " ")
+            if (string.IsNullOrWhiteSpace(numeText.Text))
             {
-                MessageBox.Show("cateva campuri au ramas necompletate!!");
+                e.Cancel = true;
+                numeText.Focus();
+                errorName.SetError(numeText, "Name should not be left blank!");
+            }else if (string.IsNullOrWhiteSpace(prenumeText.Text))
+            {
+                e.Cancel = true;
+                prenumeText.Focus();
+                errorPrenume.SetError(prenumeText, "Prenume should not be left blank!");
+            }else if (string.IsNullOrWhiteSpace(textBox3.Text))
+            {
+                e.Cancel = true;
+                textBox3.Focus();
+                errorAdress.SetError(textBox3, "Adress should not be left blank!");
             }
             else
             {
+                e.Cancel = false;
+                errorName.SetError(numeText, "");
+            }
+        }
+
+        private void buyButton_Click(object sender, EventArgs e)
+        {
+
+            if (ValidateChildren(ValidationConstraints.Enabled))
+            {
+                MessageBox.Show(numeText.Text, "Demo App - Message!");
+                return;
+            }
+            
                 var stuff = new Sales();
                 stuff.IdSale = Guid.NewGuid();
                 stuff.FullName = numeText.Text + " " + prenumeText.Text;
@@ -114,7 +138,7 @@ namespace seminar9
                 MessageBox.Show("Comanda ta este in curs de procesare");
                 Hide();
                 
-            }
+            
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

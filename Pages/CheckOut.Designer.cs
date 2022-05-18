@@ -29,6 +29,7 @@ namespace seminar9
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.numeText = new System.Windows.Forms.TextBox();
             this.prenumeText = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -44,8 +45,14 @@ namespace seminar9
             this.label4 = new System.Windows.Forms.Label();
             this.onlineRB = new System.Windows.Forms.RadioButton();
             this.rambursRB = new System.Windows.Forms.RadioButton();
+            this.errorName = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorPrenume = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorAdress = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorPrenume)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorAdress)).BeginInit();
             this.SuspendLayout();
             // 
             // numeText
@@ -54,6 +61,7 @@ namespace seminar9
             this.numeText.Name = "numeText";
             this.numeText.Size = new System.Drawing.Size(240, 26);
             this.numeText.TabIndex = 0;
+            this.numeText.Validating += new System.ComponentModel.CancelEventHandler(this.textBoxName_Validating);
             // 
             // prenumeText
             // 
@@ -61,6 +69,7 @@ namespace seminar9
             this.prenumeText.Name = "prenumeText";
             this.prenumeText.Size = new System.Drawing.Size(240, 26);
             this.prenumeText.TabIndex = 1;
+            this.prenumeText.Validating += new System.ComponentModel.CancelEventHandler(this.textBoxName_Validating);
             // 
             // dataGridView1
             // 
@@ -115,6 +124,7 @@ namespace seminar9
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(400, 26);
             this.textBox3.TabIndex = 10;
+            this.textBox3.Validating += new System.ComponentModel.CancelEventHandler(this.textBoxName_Validating);
             // 
             // buyButton
             // 
@@ -186,6 +196,18 @@ namespace seminar9
             this.rambursRB.Text = "Ramburs";
             this.rambursRB.UseVisualStyleBackColor = true;
             // 
+            // errorName
+            // 
+            this.errorName.ContainerControl = this;
+            // 
+            // errorPrenume
+            // 
+            this.errorPrenume.ContainerControl = this;
+            // 
+            // errorAdress
+            // 
+            this.errorAdress.ContainerControl = this;
+            // 
             // CheckOut
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -211,6 +233,9 @@ namespace seminar9
             this.Text = "CheckOut";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorPrenume)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorAdress)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -233,5 +258,8 @@ namespace seminar9
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.RadioButton onlineRB;
         private System.Windows.Forms.RadioButton rambursRB;
+        private System.Windows.Forms.ErrorProvider errorName;
+        private System.Windows.Forms.ErrorProvider errorPrenume;
+        private System.Windows.Forms.ErrorProvider errorAdress;
     }
 }

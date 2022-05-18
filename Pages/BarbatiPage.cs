@@ -66,7 +66,7 @@ namespace seminar9
                 bought.Price = equip.Price;
                 bought.Color = equip.Color;
                 _equipRepository.GetBought().Add(bought); //se aduga in lista asta de elem cumparate si dupa ar trebui sa fie afisate datele despre el 
-                                                          //in tabela aia din CheckOut
+                                        //in tabela aia din CheckOut
             }
         }
 

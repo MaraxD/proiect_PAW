@@ -15,12 +15,20 @@ namespace seminar9.Pages
 {
     public partial class DBAdmin : Form
     {
+
         private readonly IEquipRepository _equiprepository;
-        private readonly Guid _id;
         public DBAdmin()
         {
             InitializeComponent();
             _equiprepository = new EquipRepository();
+            dataGridView1.AutoGenerateColumns = false;
+            dataGridView2.AutoGenerateColumns = false;
+            dataGridView3.AutoGenerateColumns = false;
+
+            dataGridView1.ColumnCount = 3;
+            dataGridView2.ColumnCount = 3;
+            dataGridView3.ColumnCount = 3;
+
 
             AddColumn(0, "Description", "Description");
             AddColumn(1, "Price", "Price");
@@ -32,9 +40,21 @@ namespace seminar9.Pages
             edit.Name = "edit";
             edit.UseColumnTextForButtonValue = true;
 
+            var edit2 = new DataGridViewButtonColumn();
+            edit2.Text = "Edit";
+            edit2.HeaderText = " ";
+            edit2.Name = "edit2";
+            edit2.UseColumnTextForButtonValue = true;
+
+            var edit3 = new DataGridViewButtonColumn();
+            edit3.Text = "Edit";
+            edit3.HeaderText = " ";
+            edit3.Name = "edit3";
+            edit3.UseColumnTextForButtonValue = true;
+
             dataGridView1.Columns.Add(edit);
-            dataGridView2.Columns.Add(edit);
-            dataGridView3.Columns.Add(edit);
+            dataGridView2.Columns.Add(edit2);
+            dataGridView3.Columns.Add(edit3);
 
             dataGridView1.CellClick += cellClick;
             dataGridView2.CellClick += cellClick;
@@ -45,33 +65,42 @@ namespace seminar9.Pages
             dataGridView3.DataSource= CopiiDatabase.Equipments;
         }
 
-        /*private void cellClick(object sender, DataGridViewCellEventArgs e)
+        private void cellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex < 0)
                 return;
+
+            //femei
             if (e.ColumnIndex == dataGridView1.Columns["edit"].Index)
             {
-                var ticket = _equiprepository.GetById(_id);
-                ticket.Seat = Convert.ToInt32(seatTXT.Text);
-                ticket.Price = Convert.ToDouble(priceTXT.Text);
-                if (regularRB.Checked == true)
-                {
-                    ticket.TicketType = "Regular";
-                }
-                else
-                {
-                    ticket.TicketType = "VIP";
-                }
-                //inainte sa se adauge in the cart trebuie sa stim id ul
                 var equip = dataGridView1.CurrentRow.DataBoundItem as Equipment;
-                var bought = new Equipment();
-                bought.Description = equip.Description;
-                bought.Price = equip.Price;
-                bought.Color = equip.Color;
-                equipmentsM.Add(bought); //se aduga in lista asta de elem cumparate si dupa ar trebui sa fie afisate datele despre el 
-                                         //in tabela aia din CheckOut
+
+                var edit = new EditFormDB(equip.Id);
+                edit.ShowDialog();
+                MessageBox.Show("the edit was succesful");
+                if (equip.Category.Equals("Men"))
+                {
+                    /*BarbatiPage.
+                    var tabela = new BarbatiPage();
+                    tabela.Show();*/
+                }
+
             }
-        }*/
+
+
+            /*//barbati
+            if (e.ColumnIndex == dataGridView2.Columns["edit"].Index)
+            {
+               
+            }
+
+
+            //copii
+            if (e.ColumnIndex == dataGridView1.Columns["edit"].Index)
+            {
+                
+            }*/
+        }
 
         private void AddColumn(int index, string property, string header)
         {
