@@ -13,40 +13,43 @@ namespace seminar9.Repositories
     public class EquipRepository : IEquipRepository
     {
 
-        public void Add1(Equipment equipment)
-        {
-            BarbatiDatabase.Equipments.Add(equipment);
+        public Equipment GetByIdF(Guid id) {
+            foreach (var ticket in FemeiDatabase.Equipments)
+            {
+                if (ticket.Id == id)
+                    return ticket;
+            }
+            return null;
         }
 
-        public BindingList<Equipment> GetBARBATI()
+        public Equipment GetByIdB(Guid id)
         {
-            return BarbatiDatabase.Equipments;
+            foreach (var ticket in BarbatiDatabase.Equipments)
+            {
+                if (ticket.Id == id)
+                    return ticket;
+            }
+            return null;
         }
 
-
-
-        public void Add2(Equipment equipment)
+        public Equipment GetByIdC(Guid id)
         {
-            FemeiDatabase.Equipments.Add(equipment);
+            foreach (var ticket in CopiiDatabase.Equipments)
+            {
+                if (ticket.Id == id)
+                    return ticket;
+            }
+            return null;
         }
 
-        public BindingList<Equipment> GetFEMEI()
+        public static BindingList<Equipment> boughtE = new BindingList<Equipment>();
+
+        public BindingList<Equipment> GetBought()
         {
-            return FemeiDatabase.Equipments;
-        }
-
-
-
-        public void Add3(Equipment equipment)
-        {
-            CopiiDatabase.Equipments.Add(equipment);
-        }
-
-        public BindingList<Equipment> GetCOPII()
-        {
-            return CopiiDatabase.Equipments;
-        }
-
+            return boughtE;
 
     }
+
+
+}
 }

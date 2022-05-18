@@ -1,5 +1,6 @@
 ﻿using seminar9.Database;
 using seminar9.Entities;
+using seminar9.Pages;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -31,6 +32,13 @@ namespace seminar9
             var exit = new Main();
             exit.Show();
             Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var adminDB = new DBAdmin();
+            adminDB.Show();
+
         }
     }
 }

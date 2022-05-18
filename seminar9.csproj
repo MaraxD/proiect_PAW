@@ -84,6 +84,12 @@
     <Compile Include="Entities\Equipment.cs" />
     <Compile Include="Entities\Sales.cs" />
     <Compile Include="Entities\Store.cs" />
+    <Compile Include="Pages\DBAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\DBAdmin.Designer.cs">
+      <DependentUpon>DBAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pages\FemeiPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\CopiiPage.resx">
       <DependentUpon>CopiiPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\DBAdmin.resx">
+      <DependentUpon>DBAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\FemeiPage.resx">
       <DependentUpon>FemeiPage.cs</DependentUpon>

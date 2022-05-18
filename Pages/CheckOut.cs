@@ -1,5 +1,6 @@
 ﻿using seminar9.Database;
 using seminar9.Entities;
+using seminar9.Repositories;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,9 +15,11 @@ namespace seminar9
 {
     public partial class CheckOut : Form
     {
+        private readonly IEquipRepository _equipRepository;
         public CheckOut()
         {
             InitializeComponent();
+            _equipRepository = new EquipRepository();
             //afisez chestiile cumparate in dataGridul de pe pagina asta
             dataGridView1.AutoGenerateColumns = false;
             dataGridView1.ColumnCount = 3;
@@ -36,7 +39,7 @@ namespace seminar9
 
             dataGridView1.CellClick += delete_cellClick;
             dataGridView1.DataSource = null;
-            dataGridView1.DataSource = BarbatiPage.equipmentsM;
+            dataGridView1.DataSource = _equipRepository.GetBought();
 
 
             //intreaba l pe prof daca e posibil asa ceva
@@ -53,7 +56,7 @@ namespace seminar9
             if (e.ColumnIndex == dataGridView1.Columns["delete"].Index)
             {
                 var equip = dataGridView1.CurrentRow.DataBoundItem as Equipment;
-                BarbatiPage.equipmentsM.Remove(equip);
+                _equipRepository.GetBought().Remove(equip);
             }
             sumValTotala();
             dataGridView1.Refresh();
@@ -116,8 +119,6 @@ namespace seminar9
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            var back = new UserPage();
-            back.Show();
             Hide();
         }
 
