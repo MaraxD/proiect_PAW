@@ -110,5 +110,18 @@ namespace seminar9.Pages
         {
             Hide();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var add = new AddFormDB();
+            add.ShowDialog();
+
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = dbEquip;
+            dataGridView1.Refresh();
+            var open = new UserPage();
+            open.Show();
+
+        }
     }
 }

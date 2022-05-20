@@ -33,6 +33,7 @@ namespace seminar9.Pages
             this.saveButton = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -50,7 +51,7 @@ namespace seminar9.Pages
             // 
             // saveButton
             // 
-            this.saveButton.Location = new System.Drawing.Point(924, 910);
+            this.saveButton.Location = new System.Drawing.Point(924, 918);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(177, 49);
             this.saveButton.TabIndex = 3;
@@ -60,7 +61,7 @@ namespace seminar9.Pages
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(43, 910);
+            this.button1.Location = new System.Drawing.Point(43, 918);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(177, 49);
             this.button1.TabIndex = 14;
@@ -79,11 +80,22 @@ namespace seminar9.Pages
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(484, 918);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(177, 49);
+            this.button2.TabIndex = 16;
+            this.button2.Text = "Add data into the database";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // DBAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1145, 971);
+            this.ClientSize = new System.Drawing.Size(1145, 994);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.saveButton);
@@ -102,5 +114,6 @@ namespace seminar9.Pages
         private System.Windows.Forms.Button saveButton;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button2;
     }
 }
