@@ -10,34 +10,36 @@ using System.Threading.Tasks;
 namespace seminar9.Repositories
 {
 
+
     public class EquipRepository : IEquipRepository
     {
 
-        public Equipment GetByIdF(Guid id) {
-            foreach (var ticket in FemeiDatabase.Equipments)
+        public Equipment GetByIdF(Guid id)
+        {
+            foreach (var equip in FemeiDatabase.Equipments)
             {
-                if (ticket.Id == id)
-                    return ticket;
+                if (equip.Id == id)
+                    return equip;
             }
             return null;
         }
 
         public Equipment GetByIdB(Guid id)
         {
-            foreach (var ticket in BarbatiDatabase.Equipments)
+            foreach (var equip in BarbatiDatabase.Equipments)
             {
-                if (ticket.Id == id)
-                    return ticket;
+                if (equip.Id == id)
+                    return equip;
             }
             return null;
         }
 
         public Equipment GetByIdC(Guid id)
         {
-            foreach (var ticket in CopiiDatabase.Equipments)
+            foreach (var equip in CopiiDatabase.Equipments)
             {
-                if (ticket.Id == id)
-                    return ticket;
+                if (equip.Id == id)
+                    return equip;
             }
             return null;
         }
@@ -47,9 +49,39 @@ namespace seminar9.Repositories
         public BindingList<Equipment> GetBought()
         {
             return boughtE;
+        }
 
+        
+
+        //verificare: din ce tabela a fost selectat un rand pentru editare
+        public string GetDescriptionF(Guid id)
+        {
+            foreach (var equip in FemeiDatabase.Equipments)
+            {
+                if (equip.Id == id)
+                    return equip.Category;
+            }
+            return null;
+        }
+
+        public string GetDescriptionB(Guid id)
+        {
+            foreach (var equip in BarbatiDatabase.Equipments)
+            {
+                if (equip.Id == id)
+                    return equip.Category;
+            }
+            return null;
+        }
+
+        public string GetDescriptionC(Guid id)
+        {
+            foreach (var equip in CopiiDatabase.Equipments)
+            {
+                if (equip.Id == id)
+                    return equip.Category;
+            }
+            return null;
+        }
     }
-
-
-}
 }

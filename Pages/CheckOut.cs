@@ -41,11 +41,6 @@ namespace seminar9
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = _equipRepository.GetBought();
 
-
-            //intreaba l pe prof daca e posibil asa ceva
-            /*dataGridView1.DataSource = FemeiPage.equipmentsW;
-            dataGridView1.DataSource = CopiiPage.equipmentsC;*/
-
             sumValTotala();
         }
 
