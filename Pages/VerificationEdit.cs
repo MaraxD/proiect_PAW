@@ -20,6 +20,8 @@ namespace seminar9.Pages
         private void button1_Click(object sender, EventArgs e)
         {
             Hide();
+            var admin = new DBAdmin();
+            admin.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -27,6 +29,8 @@ namespace seminar9.Pages
             Hide();
             var showE = new UserPage();
             showE.Show();
+            var admin = new AdminPage();
+            admin.Show();
 
         }
     }

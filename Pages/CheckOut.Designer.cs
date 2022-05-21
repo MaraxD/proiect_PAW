@@ -61,7 +61,6 @@ namespace seminar9
             this.numeText.Name = "numeText";
             this.numeText.Size = new System.Drawing.Size(240, 26);
             this.numeText.TabIndex = 0;
-            this.numeText.Validating += new System.ComponentModel.CancelEventHandler(this.textBoxName_Validating);
             // 
             // prenumeText
             // 
@@ -69,7 +68,6 @@ namespace seminar9
             this.prenumeText.Name = "prenumeText";
             this.prenumeText.Size = new System.Drawing.Size(240, 26);
             this.prenumeText.TabIndex = 1;
-            this.prenumeText.Validating += new System.ComponentModel.CancelEventHandler(this.textBoxName_Validating);
             // 
             // dataGridView1
             // 
@@ -124,7 +122,6 @@ namespace seminar9
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(400, 26);
             this.textBox3.TabIndex = 10;
-            this.textBox3.Validating += new System.ComponentModel.CancelEventHandler(this.textBoxName_Validating);
             // 
             // buyButton
             // 

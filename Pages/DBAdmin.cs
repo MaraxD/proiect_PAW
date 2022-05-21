@@ -73,12 +73,6 @@ namespace seminar9.Pages
 
                 var edit = new EditFormDB(equip.Id);
                 edit.ShowDialog();
-                
-                dataGridView1.DataSource = null;
-                dataGridView1.DataSource = dbEquip;
-                dataGridView1.Refresh();
-
-
             }
 
 
@@ -98,6 +92,9 @@ namespace seminar9.Pages
             var check = new VerificationEdit();
             check.Show();
             Hide();
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = dbEquip;
+            dataGridView1.Refresh();
 
         }
 
@@ -119,8 +116,6 @@ namespace seminar9.Pages
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = dbEquip;
             dataGridView1.Refresh();
-            var open = new UserPage();
-            open.Show();
 
         }
     }
