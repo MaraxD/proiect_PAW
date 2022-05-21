@@ -104,11 +104,7 @@ namespace seminar9
         private void buyButton_Click(object sender, EventArgs e)
         {
 
-            if (ValidateChildren(ValidationConstraints.Enabled))
-            {
-                MessageBox.Show(numeText.Text, "Demo App - Message!");
-                return;
-            }
+            
             
                 var stuff = new Sales();
                 stuff.IdSale = Guid.NewGuid();

@@ -38,7 +38,7 @@ namespace seminar9.Pages
             this.priceTXT = new System.Windows.Forms.TextBox();
             this.descTXT = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.categTXT = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // button2
@@ -118,20 +118,21 @@ namespace seminar9.Pages
             this.label4.TabIndex = 17;
             this.label4.Text = "Category";
             // 
-            // categTXT
+            // comboBox1
             // 
-            this.categTXT.Location = new System.Drawing.Point(224, 217);
-            this.categTXT.Name = "categTXT";
-            this.categTXT.Size = new System.Drawing.Size(235, 26);
-            this.categTXT.TabIndex = 16;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(224, 223);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(235, 28);
+            this.comboBox1.TabIndex = 18;
             // 
             // AddFormDB
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(563, 382);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.categTXT);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
@@ -158,6 +159,6 @@ namespace seminar9.Pages
         private System.Windows.Forms.TextBox priceTXT;
         private System.Windows.Forms.TextBox descTXT;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox categTXT;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

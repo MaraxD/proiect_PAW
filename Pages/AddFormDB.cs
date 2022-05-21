@@ -17,6 +17,8 @@ namespace seminar9.Pages
         public AddFormDB()
         {
             InitializeComponent();
+            List<string> categories = new List<string>() { "Woman", "Men", "Kids" };
+            comboBox1.DataSource = categories;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -31,23 +33,25 @@ namespace seminar9.Pages
             newEquip.Description = descTXT.Text;
             newEquip.Price = Convert.ToDouble(priceTXT.Text);
             newEquip.Color = colorTXT.Text;
-            newEquip.Category = categTXT.Text;
-
-            if (newEquip.Category.Equals("Woman"))
+            if (comboBox1.SelectedItem.Equals("Woman"))
             {
+                newEquip.Category = Convert.ToString(comboBox1.SelectedItem);
                 FemeiDatabase.Equipments.Add(newEquip);
                 Hide();
             }
-            else if (newEquip.Category.Equals("Men"))
+            else if (comboBox1.SelectedItem.Equals("Men"))
             {
+                newEquip.Category = Convert.ToString(comboBox1.SelectedItem);
                 BarbatiDatabase.Equipments.Add(newEquip);
                 Hide();
             }
-            else if (newEquip.Category.Equals("Kids"))
+            else if (comboBox1.SelectedItem.Equals("Kids"))
             {
+                newEquip.Category = Convert.ToString(comboBox1.SelectedItem);
                 CopiiDatabase.Equipments.Add(newEquip);
                 Hide();
             }
+
             DBAdmin.dbEquip.Add(newEquip);
             Hide();
             
