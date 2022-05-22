@@ -76,7 +76,8 @@ namespace seminar9
             return Convert.ToDouble(valTotalaLabel.Text);
         }
 
-        
+
+
 
         private void buyButton_Click(object sender, EventArgs e)
         {
@@ -112,6 +113,8 @@ namespace seminar9
                 foreach (var equips in dataGridView1.DataSource as BindingList<Equipment>)
                 {
                     stuff.equipDescription = equips.Description;
+
+
                 }
 
                 stuff.TotalValue = sumValTotala();

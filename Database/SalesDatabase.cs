@@ -13,8 +13,8 @@ namespace seminar9.Database
         {
             new Sales()
             {
-                IdSale=Guid.NewGuid(),
-                FullName="de test"
+                /*IdSale=Guid.NewGuid(),
+                FullName="de test"*/
 
             }
         };

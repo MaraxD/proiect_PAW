@@ -145,7 +145,7 @@ namespace seminar9
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(475, 561);
+            this.label2.Location = new System.Drawing.Point(455, 561);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(164, 26);
             this.label2.TabIndex = 13;
@@ -155,7 +155,7 @@ namespace seminar9
             // 
             this.valTotalaLabel.AutoSize = true;
             this.valTotalaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.valTotalaLabel.Location = new System.Drawing.Point(644, 561);
+            this.valTotalaLabel.Location = new System.Drawing.Point(624, 561);
             this.valTotalaLabel.Name = "valTotalaLabel";
             this.valTotalaLabel.Size = new System.Drawing.Size(24, 26);
             this.valTotalaLabel.TabIndex = 14;
