@@ -73,6 +73,16 @@ namespace seminar9.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _227_2274341_sports_sports_logo_design_ideas_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("227-2274341_sports-sports-logo-design-ideas-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap get_up_arrow_png_pictures_99092 {
             get {
                 object obj = ResourceManager.GetObject("get-up-arrow-png-pictures-99092", resourceCulture);

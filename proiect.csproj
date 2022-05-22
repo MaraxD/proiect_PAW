@@ -234,5 +234,8 @@
   <ItemGroup>
     <None Include="Resources\map2.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\227-2274341_sports-sports-logo-design-ideas-removebg-preview.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

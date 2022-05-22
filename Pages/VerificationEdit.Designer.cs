@@ -29,6 +29,7 @@ namespace seminar9.Pages
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VerificationEdit));
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -37,14 +38,16 @@ namespace seminar9.Pages
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(85, 79);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(37, 78);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(338, 20);
+            this.label1.Size = new System.Drawing.Size(463, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "Are you sure you want to save these changes?";
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(104, 138);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(99, 39);
@@ -55,12 +58,15 @@ namespace seminar9.Pages
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.DimGray;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(290, 138);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(104, 42);
             this.button2.TabIndex = 2;
             this.button2.Text = "Yes";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // VerificationEdit
@@ -71,8 +77,8 @@ namespace seminar9.Pages
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "VerificationEdit";
-            this.Text = "VerificationEdit";
             this.ResumeLayout(false);
             this.PerformLayout();
 

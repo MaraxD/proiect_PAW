@@ -32,20 +32,23 @@ namespace seminar9
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserPage));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.wStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.magazineToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.magazineToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -67,37 +70,50 @@ namespace seminar9
             this.mStripMenuItem,
             this.cStripMenuItem,
             this.magazineToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 70);
+            this.menuStrip1.Location = new System.Drawing.Point(0, 66);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(54, 10, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(1448, 40);
+            this.menuStrip1.Size = new System.Drawing.Size(1448, 44);
             this.menuStrip1.Stretch = false;
             this.menuStrip1.TabIndex = 6;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // wStripMenuItem
             // 
+            this.wStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.wStripMenuItem.Name = "wStripMenuItem";
-            this.wStripMenuItem.Size = new System.Drawing.Size(75, 29);
+            this.wStripMenuItem.Size = new System.Drawing.Size(89, 33);
             this.wStripMenuItem.Text = "Femei";
             this.wStripMenuItem.Click += new System.EventHandler(this.wStripMenuItem_Click);
             // 
             // mStripMenuItem
             // 
+            this.mStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.mStripMenuItem.Name = "mStripMenuItem";
-            this.mStripMenuItem.Size = new System.Drawing.Size(83, 29);
+            this.mStripMenuItem.Size = new System.Drawing.Size(97, 33);
             this.mStripMenuItem.Text = "Barbati";
             this.mStripMenuItem.Click += new System.EventHandler(this.mToolStripMenuItem_Click);
             // 
             // cStripMenuItem
             // 
+            this.cStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.cStripMenuItem.Name = "cStripMenuItem";
-            this.cStripMenuItem.Size = new System.Drawing.Size(69, 29);
+            this.cStripMenuItem.Size = new System.Drawing.Size(78, 33);
             this.cStripMenuItem.Text = "Copii";
             this.cStripMenuItem.Click += new System.EventHandler(this.cStripMenuItem_Click);
+            // 
+            // magazineToolStripMenuItem
+            // 
+            this.magazineToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.magazineToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.magazineToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.magazineToolStripMenuItem.Name = "magazineToolStripMenuItem";
+            this.magazineToolStripMenuItem.Size = new System.Drawing.Size(122, 33);
+            this.magazineToolStripMenuItem.Text = "Magazine";
+            this.magazineToolStripMenuItem.Click += new System.EventHandler(this.magazineToolStripMenuItem_Click);
             // 
             // label1
             // 
@@ -108,6 +124,36 @@ namespace seminar9
             this.label1.Size = new System.Drawing.Size(134, 20);
             this.label1.TabIndex = 10;
             this.label1.Text = "Top Sales Pantofi";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(674, 143);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(179, 26);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Top sales Pantofi";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(119, 11);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(243, 52);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "SuperSport";
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::seminar9.Properties.Resources._227_2274341_sports_sports_logo_design_ideas_removebg_preview;
+            this.pictureBox6.Location = new System.Drawing.Point(13, 13);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 16;
+            this.pictureBox6.TabStop = false;
             // 
             // pictureBox5
             // 
@@ -157,42 +203,14 @@ namespace seminar9
             this.pictureBox1.BackgroundImage = global::seminar9.Properties.Resources.png_transparent_computer_icons_logout_angle_text_black;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::seminar9.Properties.Resources.png_transparent_computer_icons_logout_angle_text_black;
-            this.pictureBox1.Location = new System.Drawing.Point(1400, 23);
+            this.pictureBox1.Location = new System.Drawing.Point(1397, 19);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(27, 1, 27, 1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(38, 37);
+            this.pictureBox1.Size = new System.Drawing.Size(41, 41);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(674, 143);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(131, 20);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "Top sales Pantofi";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 8);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(243, 52);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "SuperSport";
-            // 
-            // magazineToolStripMenuItem
-            // 
-            this.magazineToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.magazineToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.magazineToolStripMenuItem.Name = "magazineToolStripMenuItem";
-            this.magazineToolStripMenuItem.Size = new System.Drawing.Size(104, 29);
-            this.magazineToolStripMenuItem.Text = "Magazine";
-            this.magazineToolStripMenuItem.Click += new System.EventHandler(this.magazineToolStripMenuItem_Click);
             // 
             // UserPage
             // 
@@ -200,6 +218,7 @@ namespace seminar9
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1499, 838);
+            this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox5);
@@ -209,13 +228,14 @@ namespace seminar9
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(27, 1, 27, 1);
             this.Name = "UserPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -243,6 +263,7 @@ namespace seminar9
         private Label label2;
         private Label label3;
         private ToolStripMenuItem magazineToolStripMenuItem;
+        private PictureBox pictureBox6;
     }
 }
 

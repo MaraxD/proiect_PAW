@@ -29,6 +29,7 @@ namespace seminar9.Pages
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddFormDB));
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -43,6 +44,8 @@ namespace seminar9.Pages
             // 
             // button2
             // 
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(63, 284);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(145, 51);
@@ -53,58 +56,65 @@ namespace seminar9.Pages
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Gray;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(354, 284);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(145, 51);
             this.button1.TabIndex = 14;
             this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(119, 175);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(85, 169);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 20);
+            this.label3.Size = new System.Drawing.Size(64, 26);
             this.label3.TabIndex = 13;
             this.label3.Text = "Color";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(119, 125);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(85, 119);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 20);
+            this.label2.Size = new System.Drawing.Size(62, 26);
             this.label2.TabIndex = 12;
             this.label2.Text = "Price";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(119, 70);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(85, 64);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 20);
+            this.label1.Size = new System.Drawing.Size(121, 26);
             this.label1.TabIndex = 11;
             this.label1.Text = "Description";
             // 
             // colorTXT
             // 
-            this.colorTXT.Location = new System.Drawing.Point(224, 169);
+            this.colorTXT.Location = new System.Drawing.Point(244, 163);
             this.colorTXT.Name = "colorTXT";
             this.colorTXT.Size = new System.Drawing.Size(235, 26);
             this.colorTXT.TabIndex = 10;
             // 
             // priceTXT
             // 
-            this.priceTXT.Location = new System.Drawing.Point(224, 119);
+            this.priceTXT.Location = new System.Drawing.Point(244, 113);
             this.priceTXT.Name = "priceTXT";
             this.priceTXT.Size = new System.Drawing.Size(235, 26);
             this.priceTXT.TabIndex = 9;
             // 
             // descTXT
             // 
-            this.descTXT.Location = new System.Drawing.Point(224, 67);
+            this.descTXT.Location = new System.Drawing.Point(244, 61);
             this.descTXT.Name = "descTXT";
             this.descTXT.Size = new System.Drawing.Size(235, 26);
             this.descTXT.TabIndex = 8;
@@ -112,16 +122,17 @@ namespace seminar9.Pages
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(119, 223);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(85, 217);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(73, 20);
+            this.label4.Size = new System.Drawing.Size(100, 26);
             this.label4.TabIndex = 17;
             this.label4.Text = "Category";
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(224, 223);
+            this.comboBox1.Location = new System.Drawing.Point(244, 217);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(235, 28);
             this.comboBox1.TabIndex = 18;
@@ -141,8 +152,8 @@ namespace seminar9.Pages
             this.Controls.Add(this.colorTXT);
             this.Controls.Add(this.priceTXT);
             this.Controls.Add(this.descTXT);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddFormDB";
-            this.Text = "AddFormDB";
             this.ResumeLayout(false);
             this.PerformLayout();
 
