@@ -131,6 +131,7 @@ namespace seminar9
             // buyButton
             // 
             this.buyButton.BackColor = System.Drawing.Color.DimGray;
+            this.buyButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buyButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buyButton.ForeColor = System.Drawing.Color.White;
             this.buyButton.Location = new System.Drawing.Point(598, 618);

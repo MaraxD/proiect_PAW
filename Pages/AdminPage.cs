@@ -20,17 +20,26 @@ namespace seminar9
             InitializeComponent();
             //salesDataView.AutoGenerateColumns = false;
 
-
+           
             salesDataView.AutoGenerateColumns = false;
             salesDataView.ColumnCount = 4;
 
-            AddColumn(0, "FullName", "Full Name");
-            AddColumn(1, "equipDescription", "Description");
-            AddColumn(2, "PaymentMethod", "Payment Method");
-            AddColumn(3, "TotalValue", "Total Value");            
-            
+            if (SalesDatabase.boughtE.Count != 0)
+            {
+                emptyLabel.Hide();
+                AddColumn(0, "FullName", "Full Name");
+                AddColumn(1, "equipDescription", "Description");
+                AddColumn(2, "PaymentMethod", "Payment Method");
+                AddColumn(3, "TotalValue", "Total Value");
+            }
+            else
+            {
+                emptyLabel.Show();
+            }
+
+
             salesDataView.DataSource = SalesDatabase.boughtE; //initial, baza mea de date e goala
-            
+
         }
 
         private void AddColumn(int index, string property, string header)

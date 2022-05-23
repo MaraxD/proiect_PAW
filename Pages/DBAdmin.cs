@@ -72,7 +72,10 @@ namespace seminar9.Pages
                 var equip = dataGridView1.CurrentRow.DataBoundItem as Equipment;
 
                 var edit = new EditFormDB(equip.Id);
-                edit.ShowDialog();
+                edit.Show();
+                dataGridView1.DataSource = null;
+                dataGridView1.DataSource = dbEquip;
+                dataGridView1.Refresh();
             }
 
 

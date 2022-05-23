@@ -34,6 +34,7 @@ namespace seminar9
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
+            this.emptyLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.salesDataView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -87,11 +88,23 @@ namespace seminar9
             this.label5.TabIndex = 15;
             this.label5.Text = "Hi, Mara Olaru...";
             // 
+            // emptyLabel
+            // 
+            this.emptyLabel.AutoSize = true;
+            this.emptyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emptyLabel.ForeColor = System.Drawing.Color.DimGray;
+            this.emptyLabel.Location = new System.Drawing.Point(429, 240);
+            this.emptyLabel.Name = "emptyLabel";
+            this.emptyLabel.Size = new System.Drawing.Size(531, 37);
+            this.emptyLabel.TabIndex = 16;
+            this.emptyLabel.Text = "nothing to see here at the moment...";
+            // 
             // AdminPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1387, 535);
+            this.Controls.Add(this.emptyLabel);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
@@ -112,5 +125,6 @@ namespace seminar9
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label emptyLabel;
     }
 }
