@@ -132,6 +132,7 @@ namespace seminar9.Pages
             this.Controls.Add(this.descTXT);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EditFormDB";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.ResumeLayout(false);
             this.PerformLayout();
 

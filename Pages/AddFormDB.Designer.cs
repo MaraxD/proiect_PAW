@@ -29,6 +29,7 @@ namespace seminar9.Pages
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddFormDB));
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -40,6 +41,8 @@ namespace seminar9.Pages
             this.descTXT = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // button2
@@ -104,6 +107,7 @@ namespace seminar9.Pages
             this.colorTXT.Name = "colorTXT";
             this.colorTXT.Size = new System.Drawing.Size(235, 26);
             this.colorTXT.TabIndex = 10;
+            this.colorTXT.Validating += new System.ComponentModel.CancelEventHandler(this.colorTextBox_validating);
             // 
             // priceTXT
             // 
@@ -111,6 +115,7 @@ namespace seminar9.Pages
             this.priceTXT.Name = "priceTXT";
             this.priceTXT.Size = new System.Drawing.Size(235, 26);
             this.priceTXT.TabIndex = 9;
+            this.priceTXT.Validating += new System.ComponentModel.CancelEventHandler(this.priceTextBox_validating);
             // 
             // descTXT
             // 
@@ -118,6 +123,7 @@ namespace seminar9.Pages
             this.descTXT.Name = "descTXT";
             this.descTXT.Size = new System.Drawing.Size(235, 26);
             this.descTXT.TabIndex = 8;
+            this.descTXT.Validating += new System.ComponentModel.CancelEventHandler(this.descriptionTextBox_validating);
             // 
             // label4
             // 
@@ -137,6 +143,10 @@ namespace seminar9.Pages
             this.comboBox1.Size = new System.Drawing.Size(235, 28);
             this.comboBox1.TabIndex = 18;
             // 
+            // errorProvider
+            // 
+            this.errorProvider.ContainerControl = this;
+            // 
             // AddFormDB
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -154,6 +164,8 @@ namespace seminar9.Pages
             this.Controls.Add(this.descTXT);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddFormDB";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -171,5 +183,6 @@ namespace seminar9.Pages
         private System.Windows.Forms.TextBox descTXT;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ErrorProvider errorProvider;
     }
 }
