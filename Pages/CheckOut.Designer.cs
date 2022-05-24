@@ -45,14 +45,10 @@ namespace seminar9
             this.label4 = new System.Windows.Forms.Label();
             this.onlineRB = new System.Windows.Forms.RadioButton();
             this.rambursRB = new System.Windows.Forms.RadioButton();
-            this.errorName = new System.Windows.Forms.ErrorProvider(this.components);
-            this.errorPrenume = new System.Windows.Forms.ErrorProvider(this.components);
-            this.errorAdress = new System.Windows.Forms.ErrorProvider(this.components);
+            this.error = new System.Windows.Forms.ErrorProvider(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorName)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorPrenume)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorAdress)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.error)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,6 +58,7 @@ namespace seminar9
             this.numeText.Name = "numeText";
             this.numeText.Size = new System.Drawing.Size(240, 26);
             this.numeText.TabIndex = 0;
+            this.numeText.Validating += new System.ComponentModel.CancelEventHandler(this.numeTextBox_validating);
             // 
             // prenumeText
             // 
@@ -69,6 +66,7 @@ namespace seminar9
             this.prenumeText.Name = "prenumeText";
             this.prenumeText.Size = new System.Drawing.Size(240, 26);
             this.prenumeText.TabIndex = 1;
+            this.prenumeText.Validating += new System.ComponentModel.CancelEventHandler(this.prenumeTextBox_validating);
             // 
             // dataGridView1
             // 
@@ -110,6 +108,7 @@ namespace seminar9
             this.paymentLabel.Size = new System.Drawing.Size(195, 26);
             this.paymentLabel.TabIndex = 6;
             this.paymentLabel.Text = "Modalitate de plata";
+            this.paymentLabel.Validating += new System.ComponentModel.CancelEventHandler(this.plataRadioBtn_validating);
             // 
             // label1
             // 
@@ -127,6 +126,7 @@ namespace seminar9
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(400, 26);
             this.textBox3.TabIndex = 10;
+            this.textBox3.Validating += new System.ComponentModel.CancelEventHandler(this.adresaTextBox_validating);
             // 
             // buyButton
             // 
@@ -183,6 +183,7 @@ namespace seminar9
             this.onlineRB.TabStop = true;
             this.onlineRB.Text = "Online";
             this.onlineRB.UseVisualStyleBackColor = true;
+            this.onlineRB.Validating += new System.ComponentModel.CancelEventHandler(this.plataRadioBtn_validating);
             // 
             // rambursRB
             // 
@@ -195,18 +196,11 @@ namespace seminar9
             this.rambursRB.TabStop = true;
             this.rambursRB.Text = "Ramburs";
             this.rambursRB.UseVisualStyleBackColor = true;
+            this.rambursRB.Validating += new System.ComponentModel.CancelEventHandler(this.plataRadioBtn_validating);
             // 
-            // errorName
+            // error
             // 
-            this.errorName.ContainerControl = this;
-            // 
-            // errorPrenume
-            // 
-            this.errorPrenume.ContainerControl = this;
-            // 
-            // errorAdress
-            // 
-            this.errorAdress.ContainerControl = this;
+            this.error.ContainerControl = this;
             // 
             // pictureBox1
             // 
@@ -244,9 +238,7 @@ namespace seminar9
             this.Name = "CheckOut";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorName)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorPrenume)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorAdress)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.error)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -270,8 +262,6 @@ namespace seminar9
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.RadioButton onlineRB;
         private System.Windows.Forms.RadioButton rambursRB;
-        private System.Windows.Forms.ErrorProvider errorName;
-        private System.Windows.Forms.ErrorProvider errorPrenume;
-        private System.Windows.Forms.ErrorProvider errorAdress;
+        private System.Windows.Forms.ErrorProvider error;
     }
 }

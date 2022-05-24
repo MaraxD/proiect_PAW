@@ -76,27 +76,95 @@ namespace seminar9
             return Convert.ToDouble(valTotalaLabel.Text);
         }
 
+        public List<string> descrp = new List<string>();
+
+        /* public override string ToString()
+         {
+             foreach (var ceva in dataGridView1.DataSource as BindingList<Equipment>)
+             {
+                 return "{0}, ",ceva.Description;
+             }
+             return 0;
+
+         }*/
+
+        private bool FormIsValid()
+        {
+            if (string.IsNullOrEmpty(numeText.Text))
+                return false;
+            if (string.IsNullOrEmpty(prenumeText.Text))
+                return false;
+            if (string.IsNullOrEmpty(textBox3.Text))
+                return false;
+            if (!(rambursRB.Checked || onlineRB.Checked))
+                return false;
+            return true;
+        }
 
 
 
-        private void buyButton_Click(object sender, EventArgs e)
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Hide();
+        }
+
+        private void numeTextBox_validating(object sender, CancelEventArgs e)
         {
             if (string.IsNullOrWhiteSpace(numeText.Text))
             {
                 numeText.Focus();
-                errorName.SetError(numeText, "Name should not be left blank!");
-            }
-            else if (string.IsNullOrWhiteSpace(prenumeText.Text))
-            {
-                prenumeText.Focus();
-                errorPrenume.SetError(prenumeText, "Prenume should not be left blank!");
-            }
-            else if (string.IsNullOrWhiteSpace(textBox3.Text))
-            {
-                textBox3.Focus();
-                errorAdress.SetError(textBox3, "Adress should not be left blank!");
+                error.SetError(numeText, "Trebuie introdus un nume!");
             }
             else
+            {
+                error.SetError(numeText, string.Empty);
+            }
+        }
+
+        private void prenumeTextBox_validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(prenumeText.Text))
+            {
+                prenumeText.Focus();
+                error.SetError(prenumeText, "Trebuie introdus un prenume!");
+            }
+            else
+            {
+                error.SetError(prenumeText, string.Empty);
+            }
+        }
+
+        private void plataRadioBtn_validating(object sender, CancelEventArgs e)
+        {
+            if (!(rambursRB.Checked == false || onlineRB.Checked == false))
+            {
+                paymentLabel.Focus();
+                error.SetError(paymentLabel, "Trebuie introdus un prenume!");
+            }
+            else
+            {
+                error.SetError(paymentLabel, string.Empty);
+            }
+        }
+
+        private void adresaTextBox_validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(textBox3.Text))
+            {
+                textBox3.Focus();
+                error.SetError(textBox3, "Trebuie introdusa o adresa");
+            }
+            else
+            {
+                error.SetError(textBox3, string.Empty);
+            }
+        }
+
+
+        private void buyButton_Click(object sender, EventArgs e)
+        {
+            if (FormIsValid())
             {
                 var stuff = new Sales();
                 stuff.IdSale = Guid.NewGuid();
@@ -112,29 +180,25 @@ namespace seminar9
 
                 foreach (var equips in dataGridView1.DataSource as BindingList<Equipment>)
                 {
-                    stuff.equipDescription = equips.Description;
-
-
+                    descrp.Add(equips.Description);
                 }
+                stuff.equipDescription = descrp.ToString();
 
                 stuff.TotalValue = sumValTotala();
 
                 SalesDatabase.boughtE.Add(stuff); //le am adaugat in baza de date, trebuie sa le afisezi si in formul din AdminPage
-                MessageBox.Show("Comanda ta este in curs de procesare");
+                MessageBox.Show("You order is being processed!");
                 Hide();
+            }
+            else
+            {
+                MessageBox.Show("Some data might be missing, check the form and try again.");
             }
 
 
 
-
-
         }
 
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            Hide();
-        }
-
+        
     }
 }
