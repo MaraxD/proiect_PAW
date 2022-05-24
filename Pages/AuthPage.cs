@@ -50,5 +50,7 @@ namespace seminar9
             back.Show();
             Hide();
         }
+
+        
     }
 }

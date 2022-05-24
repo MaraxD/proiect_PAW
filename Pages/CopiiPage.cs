@@ -1,4 +1,5 @@
-﻿using seminar9.Entities;
+﻿using seminar9.Database;
+using seminar9.Entities;
 using seminar9.Repositories;
 using System;
 using System.Collections.Generic;
@@ -39,7 +40,7 @@ namespace seminar9
             equipDataGrid3.CellClick += cellClick;
 
 
-            equipDataGrid3.DataSource = _equipRepository.GetCOPII();
+            equipDataGrid3.DataSource =CopiiDatabase.Equipments;
         }
 
 
@@ -51,7 +52,6 @@ namespace seminar9
 
 
 
-        public static List<Equipment> equipmentsC = new List<Equipment>();
 
         private void cellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -66,7 +66,7 @@ namespace seminar9
                 bought.Description = equip.Description;
                 bought.Price = equip.Price;
                 bought.Color = equip.Color;
-                equipmentsC.Add(bought); //se aduga in lista asta de elem cumparate si dupa ar trebui sa fie afisate datele despre el 
+                _equipRepository.GetBought().Add(bought); //se aduga in lista asta de elem cumparate si dupa ar trebui sa fie afisate datele despre el 
                                          //in tabela aia din CheckOut
             }
         }

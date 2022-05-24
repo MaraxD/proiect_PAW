@@ -41,7 +41,7 @@ namespace seminar9
 
 
             equipDataGrid1.CellClick += cellClick;
-            equipDataGrid1.DataSource = _equipRepository.GetBARBATI();
+            equipDataGrid1.DataSource = BarbatiDatabase.Equipments;
 
         }
 
@@ -51,7 +51,6 @@ namespace seminar9
             equipDataGrid1.Columns[index].DataPropertyName = property;
         }
 
-        public static BindingList<Equipment> equipmentsM = new BindingList<Equipment>();
 
         private void cellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -66,7 +65,7 @@ namespace seminar9
                 bought.Description = equip.Description;
                 bought.Price = equip.Price;
                 bought.Color = equip.Color;
-                equipmentsM.Add(bought); //se aduga in lista asta de elem cumparate si dupa ar trebui sa fie afisate datele despre el 
+                _equipRepository.GetBought().Add(bought); //se aduga in lista asta de elem cumparate si dupa ar trebui sa fie afisate datele despre el 
                                         //in tabela aia din CheckOut
             }
         }

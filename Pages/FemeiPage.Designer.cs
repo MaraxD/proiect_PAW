@@ -29,6 +29,7 @@ namespace seminar9
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FemeiPage));
             this.equipDataGrid2 = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.equipDataGrid2)).BeginInit();
@@ -52,6 +53,7 @@ namespace seminar9
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::seminar9.Properties.Resources.png_Home_Button_Icon_Png_Home_Bread_Crumbs_home_button_image;
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
@@ -68,9 +70,9 @@ namespace seminar9
             this.ClientSize = new System.Drawing.Size(857, 586);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.equipDataGrid2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FemeiPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FemeiPage";
             ((System.ComponentModel.ISupportInitialize)(this.equipDataGrid2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

@@ -12,12 +12,17 @@ namespace seminar9.Entities
         //camp->variab privata
         //proprietate->incapsulare a unui camp
 
+        public Guid Id { get; set; }
+
         public string Description { get; set; }
 
         public double Price { get; set; }
 
         public string Color { get; set; }
 
-       
+        //de fct asta, ca sa fie mai eficient
+        public string Category { get; set; }
+
+
     }
 }

@@ -12,106 +12,136 @@ namespace seminar9.Database
     {
         public static BindingList<Equipment> Equipments = new BindingList<Equipment>()
         {
-           
+
 
             //copii
             new Equipment()
             {
-                Description="Pantofi Adidas Streetcheck",
-                Price=111.99,
-                Color="WHITE"
+                Id = Guid.NewGuid(),
+                Description = "Pantofi Adidas Streetcheck",
+                Price = 111.99,
+                Color = "WHITE",
+                Category = "Kids"
             },
             new Equipment()
             {
-                Description="Pantofi Nike Air Zoom SuperRep 3",
-                Price=167.99,
-                Color="GREY"
+                Id = Guid.NewGuid(),
+                Description = "Pantofi Nike Air Zoom SuperRep 3",
+                Price = 167.99,
+                Color = "GREY",
+                Category = "Kids"
             },
             new Equipment()
             {
-                Description="Pantofi baschet Trae Young 1-Adidas",
-                Price=139.99,
-                Color="BLUE-RED"
-            },
-             new Equipment()
-            {
-                Description="Pantofi tenis NikeCourt Air Max Volley",
-                Price=127.99,
-                Color="BLACK"
+                Id = Guid.NewGuid(),
+                Description = "Pantofi baschet Trae Young 1-Adidas",
+                Price = 139.99,
+                Color = "BLUE-RED",
+                Category = "Kids"
             },
             new Equipment()
             {
-                Description="Pantofi copii Grand Court",
-                Price=174.99,
-                Color="WHITE-BLUE"
+                Id = Guid.NewGuid(),
+                Description = "Pantofi tenis NikeCourt Air Max Volley",
+                Price = 127.99,
+                Color = "BLACK",
+                Category = "Kids"
+            },
+            new Equipment()
+            {
+                Id = Guid.NewGuid(),
+                Description = "Pantofi copii Grand Court",
+                Price = 174.99,
+                Color = "WHITE-BLUE",
+                Category = "Kids"
             },
 
             //haine
             //copii
             new Equipment()
             {
-                Description="Trening copii X Football-Inspired Track Suit",
-                Price=199.99,
-                Color="BLACK"
+                Id = Guid.NewGuid(),
+                Description = "Trening copii X Football-Inspired Track Suit",
+                Price = 199.99,
+                Color = "BLACK",
+                Category = "Kids"
             },
             new Equipment()
             {
-                Description="Tricou copii Jordan",
-                Price=167.99,
-                Color="WHITE-RED"
+                Id = Guid.NewGuid(),
+                Description = "Tricou copii Jordan",
+                Price = 167.99,
+                Color = "WHITE-RED",
+                Category = "Kids"
             },
             new Equipment()
             {
-                Description="Tricou Adidas ",
-                Price=54.49,
-                Color="PINK"
-            },
-             new Equipment()
-            {
-                Description="Pantofi tenis NikeCourt Air Max Volley",
-                Price=127.99,
-                Color="BLACK"
+                Id = Guid.NewGuid(),
+                Description = "Tricou Adidas ",
+                Price = 54.49,
+                Color = "PINK",
+                Category = "Kids"
             },
             new Equipment()
             {
-                Description="Set De Inot Back To School",
-                Price=69.99,
-                Color="NAVY-PINK"
+                Id = Guid.NewGuid(),
+                Description = "Pantofi tenis NikeCourt Air Max Volley",
+                Price = 127.99,
+                Color = "BLACK",
+                Category = "Kids"
+            },
+            new Equipment()
+            {
+                Id = Guid.NewGuid(),
+                Description = "Set De Inot Back To School",
+                Price = 69.99,
+                Color = "NAVY-PINK",
+                Category = "Kids"
             },
 
             //accesorii
             //copii
             new Equipment()
             {
-                Description="Role Rollers Ils",
-                Price=239.99,
-                Color="BLACK-RED"
+                Id = Guid.NewGuid(),
+                Description = "Role Rollers Ils",
+                Price = 239.99,
+                Color = "BLACK-RED",
+                Category = "Kids"
             },
             new Equipment()
             {
-                Description="Casca copii Prostyle Matt 2.0-Firefly",
-                Price=43.99,
-                Color="LIME"
+                Id = Guid.NewGuid(),
+                Description = "Casca copii Prostyle Matt 2.0-Firefly",
+                Price = 43.99,
+                Color = "LIME",
+                Category = "Kids"
             },
             new Equipment()
             {
-                Description="Trotineta copii Wild Ones",
-                Price=339.99,
-                Color="PINK-LILAC"
-            },
-             new Equipment()
-            {
-                Description="Trotineta A 200",
-                Price=399.99,
-                Color="BROWN-BLACK"
+                Id = Guid.NewGuid(),
+                Description = "Trotineta copii Wild Ones",
+                Price = 339.99,
+                Color = "PINK-LILAC",
+                Category = "Kids"
             },
             new Equipment()
             {
-                Description="Protectii Leisureline",
-                Price=71.99,
-                Color="BLACK-GREY"
+                Id = Guid.NewGuid(),
+                Description = "Trotineta A 200",
+                Price = 399.99,
+                Color = "BROWN-BLACK",
+                Category = "Kids"
+            },
+            new Equipment()
+            {
+                Id = Guid.NewGuid(),
+                Description = "Protectii Leisureline",
+                Price = 71.99,
+                Color = "BLACK-GREY",
+                Category = "Kids"
             }
-        };
 
+        };
     }
 }

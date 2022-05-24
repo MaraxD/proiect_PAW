@@ -10,13 +10,13 @@ namespace seminar9.Repositories
 {
     public interface IEquipRepository
     {
-        BindingList<Equipment> GetBARBATI();
-        void Add1(Equipment equipment); //nu returnam nimic pentru ca doar citim datele
+        BindingList<Equipment> GetBought();
+        Equipment GetByIdF(Guid id);
+        Equipment GetByIdB(Guid id);
+        Equipment GetByIdC(Guid id);
+        string GetDescriptionF(Guid id);
+        string GetDescriptionB(Guid id);
+        string GetDescriptionC(Guid id);
 
-        BindingList<Equipment> GetFEMEI();
-        void Add2(Equipment equipment); //nu returnam nimic pentru ca doar citim datele
-
-        BindingList<Equipment> GetCOPII();
-        void Add3(Equipment equipment); //nu returnam nimic pentru ca doar citim datele
     }
 }
