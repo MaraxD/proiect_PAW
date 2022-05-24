@@ -35,6 +35,8 @@ namespace seminar9.Pages
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.emptyLabel = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -101,11 +103,36 @@ namespace seminar9.Pages
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // emptyLabel
+            // 
+            this.emptyLabel.AutoSize = true;
+            this.emptyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emptyLabel.ForeColor = System.Drawing.Color.DimGray;
+            this.emptyLabel.Location = new System.Drawing.Point(272, 10);
+            this.emptyLabel.Name = "emptyLabel";
+            this.emptyLabel.Size = new System.Drawing.Size(631, 22);
+            this.emptyLabel.TabIndex = 17;
+            this.emptyLabel.Text = "(este un mic bug aici, cand este schimbat ceva prin intermediul butonului add, ";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.DimGray;
+            this.label4.Location = new System.Drawing.Point(213, 32);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(689, 22);
+            this.label4.TabIndex = 21;
+            this.label4.Text = "nu se face refresh la date automat decat daca dau scroll in jos si dupa din nou i" +
+    "n sus)";
+            // 
             // DBAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(943, 902);
+            this.ClientSize = new System.Drawing.Size(942, 902);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.emptyLabel);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
@@ -117,6 +144,7 @@ namespace seminar9.Pages
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -127,5 +155,7 @@ namespace seminar9.Pages
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label emptyLabel;
+        private System.Windows.Forms.Label label4;
     }
 }
