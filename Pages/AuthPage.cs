@@ -36,7 +36,7 @@ namespace seminar9
                 enter.Show();
                 Hide();
             }
-            else
+            else if(usernameTextBox.Text != "MaraOlaru" && passwordTextBox.Text != "1234")
             {
                 MessageBox.Show("Parola sau username ul sunt gresite");
                 usernameTextBox.Text = null;
@@ -51,6 +51,30 @@ namespace seminar9
             Hide();
         }
 
-        
+        private void username_validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(usernameTextBox.Text))
+            {
+                usernameTextBox.Focus();
+                errorProvider1.SetError(usernameTextBox, "Trebuie introdus un nume!");
+            }
+            else
+            {
+                errorProvider1.SetError(usernameTextBox, string.Empty);
+            }
+        }
+
+        private void password_validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(passwordTextBox.Text))
+            {
+                passwordTextBox.Focus();
+                errorProvider1.SetError(passwordTextBox, "Trebuie introdus un nume!");
+            }
+            else
+            {
+                errorProvider1.SetError(passwordTextBox, string.Empty);
+            }
+        }
     }
 }

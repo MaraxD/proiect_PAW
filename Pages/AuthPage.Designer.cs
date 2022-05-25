@@ -29,6 +29,7 @@ namespace seminar9
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AuthPage));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,7 +42,9 @@ namespace seminar9
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -84,6 +87,7 @@ namespace seminar9
             this.usernameTextBox.Name = "usernameTextBox";
             this.usernameTextBox.Size = new System.Drawing.Size(356, 26);
             this.usernameTextBox.TabIndex = 3;
+            this.usernameTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.username_validating);
             // 
             // passwordTextBox
             // 
@@ -91,6 +95,7 @@ namespace seminar9
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.Size = new System.Drawing.Size(356, 26);
             this.passwordTextBox.TabIndex = 4;
+            this.passwordTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.password_validating);
             // 
             // label3
             // 
@@ -154,6 +159,10 @@ namespace seminar9
             this.label6.TabIndex = 17;
             this.label6.Text = "*";
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // AuthPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -174,6 +183,7 @@ namespace seminar9
             this.Name = "AuthPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,5 +202,6 @@ namespace seminar9
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
